@@ -523,7 +523,7 @@ const products = [
   },
 ];
 
-export default function StarbucksMatchaCarousel() {
+export default function Carousel() {
   const [animating, setAnimating] = useState(false);
   const [active, setActive] = useState(0);
   const count = products.length;
@@ -589,7 +589,7 @@ export default function StarbucksMatchaCarousel() {
       {/* Animated Circle BG: new color over previous color, expanding from image area */}
       <div
         key={bgCircleKey}
-        className="fixed inset-0 z-0 transition-bg"
+        className="absolute inset-0 z-0 transition-bg"
         style={{
           backgroundColor: prevBg,
         }}

@@ -5,6 +5,9 @@ import { View } from "@react-three/drei";
 import Hero from "./components/Hero";
 import Homepage from "./components/Homepage";
 import Carousel from "./components/Carousel";
+import Test from "./components/Test";
+import Testing from "./components/Testing";
+import OurProducts from "./components/OurProducts";
 
 export default function Home() {
   return (
@@ -13,8 +16,18 @@ export default function Home() {
         <Bubbles count={300} speed={2} repeat={true} />
       </View> */}
       {/* <Hero /> */}
-      <Carousel />
+      {/* <section>
+        <Carousel />
+      </section> */}
+
       {/* <Homepage /> */}
+      {/* <Test /> */}
+      <section>
+        <Testing />
+      </section>
+      {/* <section className="relative bg-[#F5F3F3]">
+        <OurProducts />
+      </section> */}
     </div>
   );
 }
