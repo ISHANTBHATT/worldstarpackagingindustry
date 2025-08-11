@@ -48,7 +48,7 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm  mb-4 font-light">
-                We are India's Largest Paper Cup Manufacturers and Exporter
+                We are India&apos;s Largest Paper Cup Manufacturers and Exporter
               </p>
               <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-8">
                 ABOUT
@@ -107,7 +107,7 @@ export default function Page() {
               SINCE 2003
             </p> */}
             <h2 className="text-4xl md:text-5xl font-light mb-8">
-              We are India's Largest Paper Cup
+              We are India&apos;s Largest Paper Cup
               <br />
               Manufacturers and Exporter{" "}
               {/* <span className="text-gray-400">
