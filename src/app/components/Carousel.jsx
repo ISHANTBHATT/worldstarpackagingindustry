@@ -608,28 +608,19 @@ export default function Carousel() {
       </div>
 
       {/* Top Navigation Bar */}
-      <header className="w-full flex items-center justify-between border-b border-white/30 px-6 py-2 z-10 relative bg-transparent">
+      {/* <header className="w-full flex items-center justify-between border-b border-white/30 px-6 py-2 z-10 relative bg-transparent">
         <div className="flex-shrink-0 flex items-center">
-          <img src="/images/logo.png" alt="Logo" className="w-14 h-14" />
+          <img src="/images/logo2.png" alt="Logo" className="w-14 h-14" />
         </div>
         <nav className="flex gap-10 mr-6">
-          {/* <a href="#" className="text-black font-normal">
-            Coffee
-          </a>
-          <a href="#" className="text-black font-normal">
-            Menu
-          </a>
-          <a href="#" className="text-black font-normal">
-            About
-          </a> */}
           <a
-            href="#"
+            href="about"
             className="text-black hover:text-gray-600 transition-colors"
           >
             About
           </a>
           <a
-            href="#"
+            href="our-products"
             className="text-black hover:text-gray-600 transition-colors"
           >
             Our Products
@@ -647,7 +638,7 @@ export default function Carousel() {
             Contact
           </a>
         </nav>
-      </header>
+      </header> */}
 
       {/* Two-Column Split */}
       <main className="h-[calc(100vh-64px)] flex w-full relative">

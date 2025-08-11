@@ -1,29 +1,23 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-// import NotFound from "../img/NotFound.svg";
-// import { useStateValue } from "../context/StateProvider";
-// import { actionType } from "../context/reducer";
 
-const RowContainer = ({ flag, data, scrollValue }) => {
+const RowContainer = ({ Data }) => {
   const rowContainer = useRef();
 
-  const [items, setItems] = useState([]);
+  // const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    rowContainer.current.scrollLeft += scrollValue;
-  }, [scrollValue]);
+  // useEffect(() => {
+  //   rowContainer.current.scrollLeft += scrollValue;
+  // }, [scrollValue]);
 
   return (
     <div
       ref={rowContainer}
-      className={`w-full flex items-center gap-3  my-12 scroll-smooth  ${
-        flag
-          ? "overflow-x-scroll scrollbar-none"
-          : "overflow-x-hidden flex-wrap justify-center"
-      }`}
+      className={`w-full flex items-center gap-3  my-12 scroll-smooth`}
     >
-      {data && data.length > 0 ? (
-        data.map((item) => (
+      {Data && Data.length > 0 ? (
+        Data.map((item) => (
           <div
             key={item?.id}
             className="w-275 h-[175px] min-w-[275px] md:w-300 md:min-w-[300px] bg-[rgba(256,256,256,0.4)] rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"

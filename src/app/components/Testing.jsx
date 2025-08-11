@@ -1,13 +1,15 @@
 // app/page.jsx or pages/index.jsx
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Head from "next/head";
 import { SpinningText } from "@/components/spinning-text";
 import Carousel from "./Carousel";
 import OurProducts from "./OurProducts";
+import Clients from "./Clients";
 
 export default function Testing() {
+  const smootherRef = useRef(null);
   useEffect(() => {
     // Only run in browser
     if (typeof window !== "undefined") {
@@ -35,7 +37,7 @@ export default function Testing() {
 
               gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
-              const smoother = ScrollSmoother.create({
+              smootherRef.current = ScrollSmoother.create({
                 wrapper: "#smooth-wrapper",
                 content: "#smooth-content",
                 smooth: 4,
@@ -191,7 +193,10 @@ export default function Testing() {
       document.body.appendChild(gsapScript);
     }
     return () => {
-      smoother.kill(); // Clean up on unmount
+      if (smootherRef.current) {
+        smootherRef.current.kill();
+        smootherRef.current = null;
+      }
     };
   }, []);
 
@@ -453,6 +458,8 @@ export default function Testing() {
             </div>
           </section>
 
+          <Clients />
+
           <div className="w-full flex flex-col items-end relative">
             <BigText />
 
@@ -464,8 +471,20 @@ export default function Testing() {
           </div>
 
           {/* Footer */}
-          <footer className="w-full flex justify-between items-center py-6 border-t-2 border-[#734425] max-w-[1440px] mx-auto px-5">
-            <img src="/images/logo.png" className="max-w-[132px]" alt="logo" />
+          <footer className="w-full flex justify-between items-center py-6 border-t-2 border-[#734425] max-w-[1440px] mx-auto px-5 text-[#734425]">
+            <img src="/images/logo2.png" className="max-w-[132px]" alt="logo" />
+            <div className="grid grid-cols-2 gap-8 text-sm font-light text-[#734425]">
+              <div>
+                <h4 className="mb-4">Home</h4>
+                <h4 className="mb-4">About</h4>
+                <h4 className="mb-4">Our Products</h4>
+              </div>
+              <div>
+                <h4 className="mb-4">LINKEDIN</h4>
+                <h4 className="mb-4">YOUTUBE</h4>
+                <h4 className="mb-4">TWITTER</h4>
+              </div>
+            </div>
             <div className="social flex items-center gap-4">
               <a href="#">
                 <img src="/images/fb.png" alt="fb" />
