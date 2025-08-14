@@ -246,7 +246,7 @@ export default function Testing() {
           >
             {/* Floating Headphone Image */}
             <img
-              src="/images/cup7.png"
+              src="/images/cup13.png"
               alt=""
               id="headphone"
               className="absolute left-1/2 -translate-x-1/2 top-[2.2%] w-[40vw] max-w-[660px] z-10 drop-shadow-[8px_35px_6px_rgba(0,0,0,0.13)]"
