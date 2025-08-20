@@ -7,6 +7,7 @@ import { SpinningText } from "@/components/spinning-text";
 import Carousel from "./Carousel";
 import OurProducts from "./OurProducts";
 import Clients from "./Clients";
+import Homepage from "./Homepage";
 
 export default function Testing() {
   const smootherRef = useRef(null);
@@ -238,6 +239,7 @@ export default function Testing() {
               </a>
             </nav>
           </header> */}
+          {/* <Homepage /> */}
           <Carousel />
           <OurProducts />
           <main

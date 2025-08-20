@@ -488,38 +488,73 @@
 
 import { useState, useEffect, useRef } from "react";
 
+// const products = [
+//   {
+//     title: "MATCHA LATTE MACCHIATO, A NEW PRODUCT",
+//     price: "$ 20",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+//     bgColor: "#7eb63d",
+//     image: "/images/c1.png",
+//   },
+//   {
+//     title: "CAFFE LATTE, A NEW PRODUCT",
+//     price: "$ 20",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+//     bgColor: "#9c4d2f",
+//     image: "/images/c2.png",
+//   },
+//   {
+//     title: "STRAWBERRY MOCHA, A NEW PRODUCT",
+//     price: "$ 20",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+//     bgColor: "#f5bfaf",
+//     image: "/images/c3.png",
+//   },
+//   {
+//     title: "DOPPIO ESPRESSO, A NEW PRODUCT",
+//     price: "$ 20",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+//     bgColor: "#dedfe1",
+//     image: "/images/c4.png",
+//   },
+// ];
+
 const products = [
   {
-    title: "MATCHA LATTE MACCHIATO, A NEW PRODUCT",
+    title: "GOURMET FRESH COFFEE",
     price: "$ 20",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
-    bgColor: "#7eb63d",
-    image: "/images/4.png",
+    bgColor: "#F5ECE4",
+    image: "/images/c1.png",
   },
   {
-    title: "CAFFE LATTE, A NEW PRODUCT",
+    title: "COFFE EAT",
     price: "$ 20",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
-    bgColor: "#9c4d2f",
-    image: "/images/1.png",
+    bgColor: "#F5ECE4",
+    image: "/images/c2.png",
   },
   {
-    title: "STRAWBERRY MOCHA, A NEW PRODUCT",
+    title: "THE COFFEE",
     price: "$ 20",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
-    bgColor: "#f5bfaf",
-    image: "/images/2.png",
+    bgColor: "#F5ECE4",
+    image: "/images/c3.png",
   },
   {
-    title: "DOPPIO ESPRESSO, A NEW PRODUCT",
+    title: "CHAAYOS",
     price: "$ 20",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
-    bgColor: "#dedfe1",
-    image: "/images/3.png",
+    bgColor: "#F5ECE4",
+    image: "/images/c4.png",
   },
 ];
 

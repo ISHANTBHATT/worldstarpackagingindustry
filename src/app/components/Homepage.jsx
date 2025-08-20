@@ -293,9 +293,9 @@ export default function Homepage() {
   };
 
   return (
-    <div className="w-full h-screen m-0 p-0 bg-[#1d1e22] overflow-hidden relative">
+    <div className="w-full h-screen m-0 p-0 bg-[#F5ECE4] overflow-hidden relative">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6">
+      {/* <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6">
         <div className="text-2xl font-bold text-black">Squeezy</div>
         <nav className="hidden md:flex items-center space-x-8 font-semibold">
           <a
@@ -327,14 +327,14 @@ export default function Homepage() {
           <Search className="w-5 h-5 text-black cursor-pointer hover:text-gray-600 transition-colors" />
           <Menu className="w-5 h-5 text-black cursor-pointer hover:text-gray-600 transition-colors md:hidden" />
         </div>
-      </header>
+      </header> */}
 
       {/* Layer 1 - Orange */}
       <div
         className={`
           w-screen h-screen flex items-center justify-center flex-col absolute top-0 left-0
           transition-all duration-[1200ms] ease-[cubic-bezier(0.71,0,0.38,1)]
-          bg-[rgb(255,239,219)]
+          bg-[#F5ECE4]
           ${isToggled ? "z-[1]" : "z-[2]"}
         `}
         style={{
@@ -429,7 +429,7 @@ export default function Homepage() {
         className={`
           w-screen h-screen flex items-center justify-center flex-col absolute top-0 left-0
           transition-all duration-[1200ms] ease-[cubic-bezier(0.71,0,0.38,1)]
-          bg-[rgb(229,254,193)]
+          bg-[#F5ECE4]
           ${isToggled ? "z-[2]" : "z-[1]"}
         `}
       >
