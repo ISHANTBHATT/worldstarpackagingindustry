@@ -14,7 +14,7 @@ export default function Header() {
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (currentUser) => {
       if (!currentUser) {
-        router.replace("/");
+        // router.replace("/");
       } else {
         setUser(currentUser);
       }

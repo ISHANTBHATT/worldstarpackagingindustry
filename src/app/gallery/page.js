@@ -1023,11 +1023,11 @@ export default function SunzineGallery() {
             {filteredImages.map((image, index) => (
               <div
                 key={`${image.src}-${index}`}
-                className="relative overflow-hidden rounded-lg cursor-pointer group break-inside-avoid mb-4"
+                className="relative overflow-hidden rounded-lg cursor-pointer group break-inside-avoid mb-4 bg-white px-4 pt-4 pb-14"
                 onClick={() => openCarousel(index)}
               >
                 <div
-                  className="relative w-full"
+                  className="relative w-full overflow-hidden"
                   style={{
                     height: `${200 + getRandomRowSpan() * 100}px`,
                   }}
