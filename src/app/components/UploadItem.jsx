@@ -147,24 +147,24 @@ const CreateContainer = () => {
     {
       id: 1,
       name: "Single Wall Paper Cups",
-      urlParamName: "single-wall-paper-cups",
+      urlParamName: "SINGLE WALL PAPER CUPS",
     },
     {
       id: 2,
       name: "Double Wall Paper Cups",
-      urlParamName: "double-wall-paper-cups",
+      urlParamName: "DOUBLE WALL PAPER CUPS",
     },
-    { id: 3, name: "Rippled Paper Cups", urlParamName: "rippled-paper-cups" },
+    { id: 3, name: "Rippled Paper Cups", urlParamName: "RIPPLED PAPER CUPS" },
     {
       id: 4,
       name: "Paper Food Container With Paper Lid",
-      urlParamName: "paper-food-container-with-paper-lid",
+      urlParamName: "PAPER FOOD CONTAINER WITH PAPER LID",
     },
-    { id: 5, name: "Paper straws", urlParamName: "paper-straws" },
+    { id: 5, name: "Paper straws", urlParamName: "PAPER STRAWS" },
     {
       id: 6,
       name: "Plastic Lid for Paper Cups",
-      urlParamName: "plastic-id-for-paper-cups",
+      urlParamName: "PLASTIC LID FOR PAPER CUPS",
     },
   ];
   return (
@@ -210,7 +210,7 @@ const CreateContainer = () => {
                 <option
                   key={item.id}
                   className="text-base border-0 outline-none capitalize bg-white text-headingColor"
-                  value={item.name}
+                  value={item.urlParamName}
                 >
                   {item.name}
                 </option>

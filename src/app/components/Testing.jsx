@@ -473,7 +473,7 @@ export default function Testing() {
           </div>
 
           {/* Footer */}
-          <footer className="w-full flex justify-between items-center py-6 border-t-2 border-[#734425] max-w-[1440px] mx-auto px-5 text-[#734425]">
+          {/* <footer className="w-full flex justify-between items-center py-6 border-t-2 border-[#734425] max-w-[1440px] mx-auto px-5 text-[#734425]">
             <img src="/images/logo2.png" className="max-w-[132px]" alt="logo" />
             <div className="grid grid-cols-2 gap-8 text-sm font-light text-[#734425]">
               <div>
@@ -495,7 +495,7 @@ export default function Testing() {
                 <img src="/images/insta.png" alt="insta" />
               </a>
             </div>
-          </footer>
+          </footer> */}
         </div>
       </div>
     </section>

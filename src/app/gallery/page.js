@@ -442,10 +442,14 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-
+import { getAllFoodItems } from "@/utils/firebaseFunctions";
+import { Data } from "../data/ProductData";
 export default function SunzineGallery() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
+  const [err, setErr] = useState(null);
   const [categories, setCategories] = useState([
     { name: "ALL", active: true },
     { name: "SINGLE WALL PAPER CUPS", active: false },
@@ -456,445 +460,35 @@ export default function SunzineGallery() {
     { name: "PLASTIC LID FOR PAPER CUPS", active: false },
   ]);
 
-  // Sample images with categories (className removed for dynamic layout)
-  const [galleryImages, setGalleryImages] = useState([
-    {
-      src: "/images/p1.jpeg",
-      alt: "Mountain landscape view",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p2.jpeg",
-      alt: "Modern interior",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p3.jpeg",
-      alt: "Neon geometric design",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p4.jpeg",
-      alt: "Gourmet food",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p5.jpeg",
-      alt: "Portrait photography",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p6.jpeg",
-      alt: "Coffee latte art",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p7.jpeg",
-      alt: "Engagement ring",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p8.jpeg",
-      alt: "Dog on pool float",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p9.jpeg",
-      alt: "Coffee beans",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p10.jpeg",
-      alt: "Abstract banana art",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p11.jpeg",
-      alt: "Tattoo artist",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p12.jpeg",
-      alt: "Vintage car detail",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p13.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p14.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p15.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p16.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p17.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p18.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/p19.jpeg",
-      alt: "Couple at sunset",
-      category: "SINGLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/r1.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r2.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r3.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r4.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r5.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r6.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r7.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r8.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r9.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r10.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r11.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r12.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r13.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r14.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r15.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r16.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r17.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r18.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r19.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r20.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r21.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r22.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r23.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r24.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/r25.jpeg",
-      alt: "Couple at sunset",
-      category: "RIPPLED PAPER CUPS",
-    },
-    {
-      src: "/images/d1.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-
-    {
-      src: "/images/d2.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d3.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d4.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d5.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d6.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d7.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d8.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d9.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d10.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d11.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d12.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d13.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d14.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d15.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d16.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d17.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d18.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d19.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d20.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d21.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d22.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d23.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d24.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d25.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d26.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d27.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d28.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d29.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-    {
-      src: "/images/d30.jpeg",
-      alt: "Couple at sunset",
-      category: "DOUBLE WALL PAPER CUPS",
-    },
-
-    {
-      src: "/images/f1.jpeg",
-      alt: "Couple at sunset",
-      category: "PAPER FOOD CONTAINER WITH PAPER LID",
-    },
-    {
-      src: "/images/f2.jpeg",
-      alt: "Couple at sunset",
-      category: "PAPER FOOD CONTAINER WITH PAPER LID",
-    },
-    {
-      src: "/images/f3.jpeg",
-      alt: "Couple at sunset",
-      category: "PAPER FOOD CONTAINER WITH PAPER LID",
-    },
-    {
-      src: "/images/s1.jpeg",
-      alt: "Couple at sunset",
-      category: "PAPER STRAWS",
-    },
-    {
-      src: "/images/s2.jpeg",
-      alt: "Couple at sunset",
-      category: "PAPER STRAWS",
-    },
-    {
-      src: "/images/l1.jpeg",
-      alt: "Couple at sunset",
-      category: "PLASTIC LID FOR PAPER CUPS",
-    },
-    {
-      src: "/images/l2.jpg",
-      alt: "Couple at sunset",
-      category: "PLASTIC LID FOR PAPER CUPS",
-    },
-    {
-      src: "/images/l3.jpg",
-      alt: "Couple at sunset",
-      category: "PLASTIC LID FOR PAPER CUPS",
-    },
-  ]);
-
-  // Function to fetch data from server
-  const fetchGalleryImages = async () => {
+  const fetchData = async () => {
+    setLoading(true);
+    setErr(null);
     try {
-      const response = await fetch("/api/gallery-images"); // Replace with your API endpoint
-      const data = await response.json();
-      setGalleryImages(data);
-    } catch (error) {
-      console.error("Error fetching gallery images:", error);
+      const items = await getAllFoodItems();
+      setData([...Data, ...items]);
+    } catch (e) {
+      setErr(e?.message || "Failed to fetch items");
+    } finally {
+      setLoading(false);
     }
   };
 
-  // Fetch data on component mount
   useEffect(() => {
-    // Uncomment the line below when you have your API ready
-    // fetchGalleryImages();
+    fetchData();
   }, []);
+
+  // Fetch data on component mount
+  // useEffect(() => {
+  //   // Uncomment the line below when you have your API ready
+  //   // fetchGalleryImages();
+  // }, []);
 
   // Filter images based on selected category
   const activeCategory = categories.find((c) => c.active)?.name || "ALL";
   const filteredImages =
     activeCategory === "ALL"
-      ? galleryImages
-      : galleryImages.filter((img) => img.category === activeCategory);
+      ? data
+      : data.filter((img) => img.category === activeCategory);
 
   const openCarousel = (index) => {
     setSelectedImageIndex(index);
@@ -1022,7 +616,7 @@ export default function SunzineGallery() {
           >
             {filteredImages.map((image, index) => (
               <div
-                key={`${image.src}-${index}`}
+                key={`${image?.imageURL}-${index}`}
                 className="relative overflow-hidden rounded-lg cursor-pointer group break-inside-avoid mb-4 bg-white px-4 pt-4 pb-14"
                 onClick={() => openCarousel(index)}
               >
@@ -1032,11 +626,11 @@ export default function SunzineGallery() {
                     height: `${200 + getRandomRowSpan() * 100}px`,
                   }}
                 >
-                  <Image
-                    src={image.src || "/placeholder.svg"}
+                  <img
+                    src={image?.imageURL || "/placeholder.svg"}
                     alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    // fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105 w-full h-full"
                     sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-20 transition-opacity duration-300" />
@@ -1080,8 +674,11 @@ export default function SunzineGallery() {
           {/* Main Image */}
           <div className="relative w-full h-full max-w-6xl max-h-[90vh] mx-4">
             <Image
-              src={filteredImages[selectedImageIndex].src || "/placeholder.svg"}
-              alt={filteredImages[selectedImageIndex].alt}
+              src={
+                filteredImages[selectedImageIndex]?.imageURL ||
+                "/placeholder.svg"
+              }
+              alt={filteredImages[selectedImageIndex]?.alt}
               fill
               className="object-contain"
               priority

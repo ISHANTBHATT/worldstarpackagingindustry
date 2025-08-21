@@ -353,7 +353,7 @@ export default function Homepage() {
         </div>
         {/* Can Container */}
         <div className="w-[200px] relative overflow-hidden mt-[75px]">
-          <img src="/images/can 2.png" alt="Can" className="w-full" />
+          <img src="/images/cup-1.png" alt="Can" className="w-full" />
           <img
             src="/images/Contents.png"
             alt="Contents"
@@ -445,7 +445,7 @@ export default function Homepage() {
         </div>
         {/* Can Container */}
         <div className="w-[200px] relative overflow-hidden mt-[75px]">
-          <img src="/images/can 2.png" alt="Can" className="w-full" />
+          <img src="/images/cup-1.png" alt="Can" className="w-full" />
           <img
             src="/images/Contents-2.png"
             alt="Contents"

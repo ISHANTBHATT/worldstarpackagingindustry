@@ -575,10 +575,10 @@ export default function Carousel() {
 
   // Carousel autoplay
   useEffect(() => {
-    timeoutRef.current = setTimeout(
-      () => handleSlide((active + 1) % count),
-      5000
-    );
+    // timeoutRef.current = setTimeout(
+    //   () => handleSlide((active + 1) % count),
+    //   5000
+    // );
     timeoutRef.current = setTimeout(() => {
       triggerAnimation((active + 1) % count);
     }, 5000);
