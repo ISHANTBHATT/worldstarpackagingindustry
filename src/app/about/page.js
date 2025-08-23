@@ -160,7 +160,30 @@ export default function Page() {
       </section>
 
       {/* ECO Section */}
+
       <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-6xl font-light mb-8">
+                BRC
+                {/* <span className="text-4xl">———————</span> 2024 */}
+              </h2>
+            </div>
+            <div className="relative flex items-center justify-center">
+              <Image
+                src="/images/BRC.jpg"
+                alt="Geometric metal structure"
+                width={400}
+                height={500}
+                className=" w-[300px] object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -179,9 +202,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative flex items-center justify-center">
@@ -200,6 +223,28 @@ export default function Page() {
             </div>
           </div>
         </div>
+      </section> */}
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="relative flex items-center justify-center">
+              <Image
+                src="/images/fssc.jpg"
+                alt="Geometric metal structure"
+                width={400}
+                height={500}
+                className="w-[300px] object-contain rounded-lg"
+              />
+            </div>
+            <div>
+              <h2 className="text-6xl font-light mb-8">
+                FSSC 22000
+                {/* <span className="text-4xl">———————</span> 22000 */}
+              </h2>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="py-20">
@@ -207,7 +252,8 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-6xl font-light mb-8">
-                SEDEX <span className="text-4xl">———————</span> SMETA 2-PILLAR
+                SEDEX
+                {/* <span className="text-4xl">———————</span> SMETA 2-PILLAR */}
               </h2>
             </div>
             <div className="relative flex items-center justify-center">
@@ -218,6 +264,25 @@ export default function Page() {
                 height={500}
                 className="w-[300px] object-contain rounded-lg"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="relative flex items-center justify-center">
+              <Image
+                src="/images/fsc.jpg"
+                alt="Geometric metal structure"
+                width={400}
+                height={500}
+                className="w-[300px] object-contain rounded-lg"
+              />
+            </div>
+            <div>
+              <h2 className="text-6xl font-light mb-8">FSC</h2>
             </div>
           </div>
         </div>

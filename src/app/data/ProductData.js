@@ -1,4 +1,10 @@
 export const Data = [
+  // Single Wall Paper Cups
+  {
+    imageURL: "/images/p19.jpeg",
+    alt: "Couple at sunset",
+    category: "SINGLE WALL PAPER CUPS",
+  },
   {
     imageURL: "/images/p1.jpeg",
     alt: "Mountain landscape view",
@@ -80,27 +86,33 @@ export const Data = [
     category: "SINGLE WALL PAPER CUPS",
   },
   {
-    imageURL: "/images/p17.jpeg",
+    imageURL: "/images/d12.jpeg",
     alt: "Couple at sunset",
     category: "SINGLE WALL PAPER CUPS",
   },
+  // Rippled Paper Cups
   {
-    imageURL: "/images/p18.jpeg",
+    imageURL: "/images/r21.jpeg",
     alt: "Couple at sunset",
-    category: "SINGLE WALL PAPER CUPS",
+    category: "RIPPLED PAPER CUPS",
   },
   {
-    imageURL: "/images/p19.jpeg",
-    alt: "Couple at sunset",
-    category: "SINGLE WALL PAPER CUPS",
-  },
-  {
-    imageURL: "/images/r1.jpeg",
+    imageURL: "/images/r22.jpeg",
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
   },
   {
     imageURL: "/images/r2.jpeg",
+    alt: "Couple at sunset",
+    category: "RIPPLED PAPER CUPS",
+  },
+  {
+    imageURL: "/images/r11.jpeg",
+    alt: "Couple at sunset",
+    category: "RIPPLED PAPER CUPS",
+  },
+  {
+    imageURL: "/images/r1.jpeg",
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
   },
@@ -144,11 +156,7 @@ export const Data = [
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
   },
-  {
-    imageURL: "/images/r11.jpeg",
-    alt: "Couple at sunset",
-    category: "RIPPLED PAPER CUPS",
-  },
+
   {
     imageURL: "/images/r12.jpeg",
     alt: "Couple at sunset",
@@ -195,16 +203,6 @@ export const Data = [
     category: "RIPPLED PAPER CUPS",
   },
   {
-    imageURL: "/images/r21.jpeg",
-    alt: "Couple at sunset",
-    category: "RIPPLED PAPER CUPS",
-  },
-  {
-    imageURL: "/images/r22.jpeg",
-    alt: "Couple at sunset",
-    category: "RIPPLED PAPER CUPS",
-  },
-  {
     imageURL: "/images/r23.jpeg",
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
@@ -218,6 +216,12 @@ export const Data = [
     imageURL: "/images/r25.jpeg",
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
+  },
+  // Double Wall Paper Cups
+  {
+    imageURL: "/images/d6.jpeg",
+    alt: "Couple at sunset",
+    category: "DOUBLE WALL PAPER CUPS",
   },
   {
     imageURL: "/images/d1.jpeg",
@@ -245,11 +249,6 @@ export const Data = [
     category: "DOUBLE WALL PAPER CUPS",
   },
   {
-    imageURL: "/images/d6.jpeg",
-    alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
-  },
-  {
     imageURL: "/images/d7.jpeg",
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
@@ -271,11 +270,6 @@ export const Data = [
   },
   {
     imageURL: "/images/d11.jpeg",
-    alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
-  },
-  {
-    imageURL: "/images/d12.jpeg",
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
   },
@@ -335,11 +329,6 @@ export const Data = [
     category: "DOUBLE WALL PAPER CUPS",
   },
   {
-    imageURL: "/images/d24.jpeg",
-    alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
-  },
-  {
     imageURL: "/images/d25.jpeg",
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
@@ -354,21 +343,38 @@ export const Data = [
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
   },
+  //2pe
   {
-    imageURL: "/images/d28.jpeg",
+    imageURL: "/images/d24.jpeg",
     alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
+    category: "2PE CUPS",
+  },
+  {
+    imageURL: "/images/p18.jpeg",
+    alt: "Couple at sunset",
+    category: "2PE CUPS",
+  },
+  {
+    imageURL: "/images/p17.jpeg",
+    alt: "Couple at sunset",
+    category: "2PE CUPS",
   },
   {
     imageURL: "/images/d29.jpeg",
     alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
+    category: "2PE CUPS",
   },
   {
     imageURL: "/images/d30.jpeg",
     alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
+    category: "2PE CUPS",
   },
+  {
+    imageURL: "/images/d28.jpeg",
+    alt: "Couple at sunset",
+    category: "2PE CUPS",
+  },
+  // Paper Food Containers
   {
     imageURL: "/images/f1.jpeg",
     alt: "Couple at sunset",
@@ -384,6 +390,7 @@ export const Data = [
     alt: "Couple at sunset",
     category: "PAPER FOOD CONTAINER WITH PAPER LID",
   },
+  // Paper straws
   {
     imageURL: "/images/s1.jpeg",
     alt: "Couple at sunset",
@@ -394,6 +401,7 @@ export const Data = [
     alt: "Couple at sunset",
     category: "PAPER STRAWS",
   },
+  // Plastic Lid for Paper Cups
   {
     imageURL: "/images/l1.jpeg",
     alt: "Couple at sunset",
@@ -409,4 +417,6 @@ export const Data = [
     alt: "Couple at sunset",
     category: "PLASTIC LID FOR PAPER CUPS",
   },
+
+  //DOUBLE WALL BUBBLE CUPS
 ];

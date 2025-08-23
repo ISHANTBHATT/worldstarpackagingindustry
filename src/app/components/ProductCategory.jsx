@@ -239,6 +239,7 @@ export default function ProductCategory() {
             <h2 className="text-2xl font-bold text-gray-900 min-w-fit pr-8">
               {cat.category}
             </h2>
+            <p className="text-sm text-gray-600 mt-1"></p>
           </div>
 
           {/* Product Grid */}

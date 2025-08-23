@@ -34,7 +34,7 @@ const springItems = [
   },
   {
     id: 6,
-    title: "Plastic Lid for Paper cups",
+    title: "Paper and Plastic Lid for Paper cups",
     imageURL: "/images/p6.png",
     bgColor: "bg-teal-500",
   },

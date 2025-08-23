@@ -1,4 +1,12 @@
-import { Facebook, Mail, MapPin, Phone, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { cn } from "@/lib/utils";
@@ -29,15 +37,18 @@ function Footer() {
             <div className="mt-4 flex items-center gap-3 text-white">
               <Social
                 icon={<Facebook className="h-4 w-4" />}
+                href="https://www.facebook.com/"
                 ariaLabel="Facebook"
               />
               <Social
                 icon={<Twitter className="h-4 w-4" />}
+                href="https://www.twitter.com/"
                 ariaLabel="Twitter"
               />
               <Social
-                icon={<Youtube className="h-4 w-4" />}
-                ariaLabel="YouTube"
+                icon={<Linkedin className="h-4 w-4" />}
+                href="https://www.linkedin.com/company/worldstar-packaging-industry/about/?viewAsMember=true"
+                ariaLabel="LinkedIn"
               />
             </div>
           </div>
@@ -63,7 +74,7 @@ function Footer() {
               </li>
               <li>
                 <Link href="/gallery" className="hover:text-white">
-                  Gallery
+                  Compostable Paper Cups
                 </Link>
               </li>
               <li>
@@ -80,11 +91,14 @@ function Footer() {
             <ul className="mt-4 space-y-4 text-zinc-300">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 text-white/80" />
-                <span>2443 Oak Ridge Omaha, QA 45065</span>
+                <span className="flex-1">
+                  World Star Packaging Industry, Plot no 53, sector 53, phase I,
+                  HSIIDC Kundli, Sonipat,Haryana-131028
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-5 w-5 text-white/80" />
-                <span>207-867-452</span>
+                <span>+91 98105 01613</span>
               </li>
               {/* <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-5 w-5 text-white/80" />
@@ -92,7 +106,9 @@ function Footer() {
               </li> */}
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-5 w-5 text-white/80" />
-                <span>support@site.com</span>
+                <span className="flex-1">
+                  worldstarpackagingindustry@gmail.com
+                </span>
               </li>
             </ul>
           </div>
@@ -117,7 +133,7 @@ function Footer() {
   );
 }
 
-function Social({ icon, ariaLabel }) {
+function Social({ icon, ariaLabel, href }) {
   return (
     <button
       aria-label={ariaLabel}
@@ -125,7 +141,9 @@ function Social({ icon, ariaLabel }) {
         "inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-zinc-300 hover:border-white hover:text-white"
       )}
     >
-      {icon}
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {icon}
+      </a>
     </button>
   );
 }

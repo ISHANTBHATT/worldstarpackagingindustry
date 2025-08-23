@@ -131,7 +131,7 @@ const CreateContainer = () => {
   const clearData = () => {
     setTitle("");
     setImageAsset(null);
-    setCategory(null);
+    setCategory("");
   };
 
   // const fetchData = async () => {
@@ -202,7 +202,7 @@ const CreateContainer = () => {
             onChange={(e) => setCategory(e.target.value)}
             className="outline-none w-full text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
           >
-            <option value="other" className="bg-white">
+            <option value="" className="bg-white">
               Select Category
             </option>
             {categories &&

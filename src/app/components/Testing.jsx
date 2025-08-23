@@ -8,6 +8,7 @@ import Carousel from "./Carousel";
 import OurProducts from "./OurProducts";
 import Clients from "./Clients";
 import Homepage from "./Homepage";
+import Footer from "./Footer";
 
 export default function Testing() {
   const smootherRef = useRef(null);
@@ -248,10 +249,10 @@ export default function Testing() {
           >
             {/* Floating Headphone Image */}
             <img
-              src="/images/cup13.png"
+              src="/images/h-cup.png"
               alt=""
               id="headphone"
-              className="absolute left-1/2 -translate-x-1/2 top-[2.2%] w-[40vw] max-w-[660px] z-10 drop-shadow-[8px_35px_6px_rgba(0,0,0,0.13)]"
+              className="absolute left-1/2 -translate-x-1/2 top-[2.2%] w-[40vw] max-w-[560px] z-10 drop-shadow-[8px_35px_6px_rgba(0,0,0,0.13)]"
               style={{ willChange: "transform" }}
             />
 
@@ -278,10 +279,10 @@ export default function Testing() {
                   custom sizes.
                 </p>
                 <a
-                  href="#"
+                  href="/about"
                   className="btn bg-[#2E2E2E] mt-8 text-white px-5 py-2 font-medium rounded-[10px]"
                 >
-                  Buy Now
+                  Know More
                 </a>
               </div>
               <div className="feature-wrapper grid grid-cols-3 gap-[1.8rem] mt-[8vw]">
@@ -412,7 +413,7 @@ export default function Testing() {
           </main>
 
           {/* Section 6 */}
-          <section
+          {/* <section
             id="section6"
             className="w-full flex items-start gap-[5vw] pb-[8vw] max-w-[1440px] mx-auto"
           >
@@ -458,12 +459,12 @@ export default function Testing() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <Clients />
 
           <div className="w-full flex flex-col items-end relative">
-            <BigText />
+            {/* <BigText /> */}
 
             <div className="bg-white rounded-full w-40 h-40 flex items-center justify-center absolute -bottom-20">
               <SpinningText className="text-[#734425] ">
@@ -471,7 +472,7 @@ export default function Testing() {
               </SpinningText>
             </div>
           </div>
-
+          <Footer />
           {/* Footer */}
           {/* <footer className="w-full flex justify-between items-center py-6 border-t-2 border-[#734425] max-w-[1440px] mx-auto px-5 text-[#734425]">
             <img src="/images/logo2.png" className="max-w-[132px]" alt="logo" />
@@ -504,15 +505,26 @@ export default function Testing() {
 
 function BigText({ slice }) {
   return (
-    <section className="min-h-screen w-screen overflow-hidden bg-[#734425] text-white">
-      <h2 className="grid w-full gap-[3vw] py-10 text-center font-black uppercase leading-[.7]">
-        <div className="text-[20vw]">Design</div>
-        <div className="grid gap-[3vw] text-[34vw] md:flex md:justify-center md:text-[10vw]">
-          <span className="inline-block">that </span>
-          <span className="inline-block max-md:text-[27vw]">makes </span>
-          <span className="inline-block max-md:text-[40vw]">you </span>
+    // <section className="min-h-screen w-screen overflow-hidden bg-[#734425] text-white">
+    //   <h2 className="grid w-full gap-[3vw] py-10 text-center font-black uppercase leading-[.7]">
+    //     <div className="text-[20vw]">Design</div>
+    //     <div className="grid gap-[3vw] text-[34vw] md:flex md:justify-center md:text-[10vw]">
+    //       <span className="inline-block">that </span>
+    //       <span className="inline-block max-md:text-[27vw]">makes </span>
+    //       <span className="inline-block max-md:text-[40vw]">you </span>
+    //     </div>
+    //     <div className="text-[27vw]">Smile</div>
+    //   </h2>
+    // </section>
+    <section className="h-[50vh] w-full overflow-hidden bg-[#734425] text-white flex items-center justify-center">
+      <h2 className="grid w-full gap-4 px-4 text-center font-black uppercase leading-[.7]">
+        <div className="text-6xl md:text-8xl">Design</div>
+        <div className="grid gap-2 text-4xl md:flex md:justify-center md:gap-4 md:text-6xl">
+          <span className="inline-block text-5xl md:text-7xl">that </span>
+          <span className="inline-block text-5xl md:text-7xl">makes </span>
+          <span className="inline-block text-5xl md:text-7xl">you </span>
         </div>
-        <div className="text-[27vw]">Smile</div>
+        <div className="text-4xl md:text-6xl">Smile</div>
       </h2>
     </section>
   );

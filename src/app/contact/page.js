@@ -221,7 +221,7 @@ export default function Page() {
       </section>
 
       {/* Contact section */}
-      <section className="mx-auto max-w-6xl p-14 sm:p-16 lg:p-20">
+      <section className="mx-auto max-w-7xl p-14 sm:p-16 lg:p-20">
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Left: form card */}
           <div className="rounded-xl border border-[#D7C9BB] bg-[#EBDFD3] p-6 sm:p-7 lg:p-8 shadow-[0_0_0_1px_rgba(80,66,55,0.03)]">
@@ -289,12 +289,12 @@ export default function Page() {
                 <Info
                   icon={<Phone className="h-5 w-5 text-[#524438]" />}
                   title="Phone Number"
-                  value="+6282 4032 567"
+                  value="+91 98105 01613"
                 />
                 <Info
                   icon={<Mail className="h-5 w-5 text-[#524438]" />}
                   title="Email Address"
-                  value="Example@Email.com"
+                  value="worldstarpackagingindustry@gmail.com"
                 />
                 <Info
                   icon={<MessageCircle className="h-5 w-5 text-[#524438]" />}
@@ -304,7 +304,7 @@ export default function Page() {
                 <Info
                   icon={<MapPin className="h-5 w-5 text-[#524438]" />}
                   title="Our Office"
-                  value="2443 Oak Ridge Omaha, QA 45065"
+                  value="World Star Packaging Industry, Plot no 53, sector 53, phase I, HSIIDC Kundli, Sonipat,Haryana-131028"
                 />
               </div>
             </div>
@@ -387,7 +387,9 @@ function Info({ icon, title, value }) {
       </div>
       <div>
         <p className="text-sm font-semibold text-white/95">{title}</p>
-        <p className="text-sm text-zinc-400">{value}</p>
+        <p className="text-sm text-zinc-400 [overflow-wrap:anywhere] inline-block">
+          {value}
+        </p>
       </div>
     </div>
   );

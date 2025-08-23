@@ -541,12 +541,12 @@ const products = [
     image: "/images/c2.png",
   },
   {
-    title: "THE COFFEE",
+    title: "INDIGO",
     price: "$ 20",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
     bgColor: "#F5ECE4",
-    image: "/images/c3.png",
+    image: "/images/c5.png",
   },
   {
     title: "CHAAYOS",
