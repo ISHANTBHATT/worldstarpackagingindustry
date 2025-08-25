@@ -28,7 +28,7 @@ function Footer() {
                   Studio
                 </p>
               </div> */}
-              <img src="/images/logo2.png" className="max-w-32" alt="logo" />
+              <img src="/images/logo.png" className="max-w-32" alt="logo" />
             </div>
             <p className="mt-4 max-w-sm text-sm text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit

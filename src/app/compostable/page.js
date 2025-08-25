@@ -119,7 +119,7 @@ export default function CompostableCupsBrochure() {
         </section>
 
         {/* Partnership Message */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <Card className="border border-[#D7C9BB] bg-[#F3E6DA] text-[#734425]">
             <CardContent className="pt-6">
               <p className="text-lg leading-relaxed mb-6">
@@ -138,14 +138,14 @@ export default function CompostableCupsBrochure() {
               </p>
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         {/* QR Code Section */}
         <QRCodeSection />
 
         {/* Quality Standards Footer */}
         <section className="mt-16 text-center">
-          <Card className="bg-card">
+          <Card className="bg-card shadow-lg">
             <CardContent className="pt-6">
               <p className="text-lg font-medium italic">
                 All products are tested as per global food safety and packaging

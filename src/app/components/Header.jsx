@@ -835,7 +835,7 @@ export default function Header() {
       <header className="w-full flex items-center justify-between border-b border-white/30 px-6 py-2 z-50 fixed bg-transparent">
         <div className="flex-shrink-0 flex items-center">
           <Link href="/" onClick={closeMobileMenu}>
-            <img src="/images/logo2.png" alt="Logo" className="w-20 h-20" />
+            <img src="/images/logo.png" alt="Logo" className="w-20 h-20" />
           </Link>
         </div>
 
@@ -1083,7 +1083,7 @@ export default function Header() {
           <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out">
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <img src="/images/logo2.png" alt="Logo" className="w-16 h-16" />
+                <img src="/images/logo.png" alt="Logo" className="w-16 h-16" />
                 <button
                   onClick={closeMobileMenu}
                   className="p-2 text-gray-600 hover:text-gray-800 transition-colors"
