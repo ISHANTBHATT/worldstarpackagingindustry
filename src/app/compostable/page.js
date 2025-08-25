@@ -126,14 +126,14 @@ export default function CompostableCupsBrochure() {
                 We would like to take this opportunity to thank you for your
                 continued trust and support. With this certification, we are
                 confident that our compostable paper cups will serve your
-                business's needs while helping you meet your sustainability
+                business&apos;s needs while helping you meet your sustainability
                 goals.
               </p>
 
               <p className="text-lg leading-relaxed">
                 If you have any questions or would like more information about
-                our certified products, please don't hesitate to reach out. We
-                look forward to continuing our partnership and providing you
+                our certified products, please don&apos;t hesitate to reach out.
+                We look forward to continuing our partnership and providing you
                 with the highest quality eco-friendly solutions.
               </p>
             </CardContent>

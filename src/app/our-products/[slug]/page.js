@@ -350,7 +350,8 @@ export default function ProductSlugPage() {
         {groupedData.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-500 text-lg">
-              No products found for "{categoryName}". Please check back later.
+              No products found for &quot;{categoryName}&quot;. Please check
+              back later.
             </p>
           </div>
         )}
