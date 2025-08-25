@@ -160,29 +160,6 @@ export default function Page() {
       </section>
 
       {/* ECO Section */}
-
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-6xl font-light mb-8">
-                BRC
-                {/* <span className="text-4xl">———————</span> 2024 */}
-              </h2>
-            </div>
-            <div className="relative flex items-center justify-center">
-              <Image
-                src="/images/BRC.jpg"
-                alt="Geometric metal structure"
-                width={400}
-                height={500}
-                className=" w-[300px] object-contain rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -225,6 +202,27 @@ export default function Page() {
         </div>
       </section> */}
 
+      {/* <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-6xl font-light mb-8">
+                BRC
+              </h2>
+            </div>
+            <div className="relative flex items-center justify-center">
+              <Image
+                src="/images/BRC.jpg"
+                alt="Geometric metal structure"
+                width={400}
+                height={500}
+                className=" w-[300px] object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -240,7 +238,6 @@ export default function Page() {
             <div>
               <h2 className="text-6xl font-light mb-8">
                 FSSC 22000
-                {/* <span className="text-4xl">———————</span> 22000 */}
               </h2>
             </div>
           </div>
@@ -253,7 +250,6 @@ export default function Page() {
             <div>
               <h2 className="text-6xl font-light mb-8">
                 SEDEX
-                {/* <span className="text-4xl">———————</span> SMETA 2-PILLAR */}
               </h2>
             </div>
             <div className="relative flex items-center justify-center">
@@ -283,6 +279,76 @@ export default function Page() {
             </div>
             <div>
               <h2 className="text-6xl font-light mb-8">FSC</h2>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            {/* Card 1 */}
+            <div>
+              <Image
+                src="/images/BRC.jpg"
+                alt="BRC Certificate"
+                width={400}
+                height={500}
+                className="w-[300px] mx-auto object-contain rounded-lg"
+              />
+              <h2 className="text-4xl font-light mt-6">BRC</h2>
+            </div>
+
+            {/* Card 2 */}
+            <div>
+              <Image
+                src="/images/fssc.jpg"
+                alt="FSSC Certificate"
+                width={400}
+                height={500}
+                className="w-[300px] mx-auto object-contain rounded-lg"
+              />
+              <h2 className="text-4xl font-light mt-6">FSSC 22000</h2>
+            </div>
+
+            {/* Card 3 */}
+            <div>
+              <Image
+                src="/images/smet2-sEDXE.jpg"
+                alt="Sedex Certificate"
+                width={400}
+                height={500}
+                className="w-[300px] mx-auto object-contain rounded-lg"
+              />
+              <h2 className="text-4xl font-light mt-6">SEDEX</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+            {/* Card 4 */}
+            <div>
+              <Image
+                src="/images/fsc.jpg"
+                alt="FSC Certificate"
+                width={400}
+                height={500}
+                className="w-[300px] mx-auto object-contain rounded-lg"
+              />
+              <h2 className="text-4xl font-light mt-6">FSC</h2>
+            </div>
+
+            <div>
+              <Image
+                src="/images/ISO-22000-2005.jpg"
+                alt="ISO 22000:2005 Certificate"
+                width={400}
+                height={500}
+                className="w-[300px] mx-auto object-contain rounded-lg"
+              />
+              <h2 className="text-4xl font-light mt-6">ISO 22000:2005</h2>
             </div>
           </div>
         </div>

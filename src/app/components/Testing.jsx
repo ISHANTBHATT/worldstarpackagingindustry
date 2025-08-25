@@ -9,6 +9,7 @@ import OurProducts from "./OurProducts";
 import Clients from "./Clients";
 import Homepage from "./Homepage";
 import Footer from "./Footer";
+import Certificates from "./Certificates";
 
 export default function Testing() {
   const smootherRef = useRef(null);
@@ -203,7 +204,7 @@ export default function Testing() {
   }, []);
 
   return (
-    <section className="relative z-0">
+    <div className="relative z-0">
       {/* <Head>
         <title>Audira</title>
 
@@ -462,7 +463,7 @@ export default function Testing() {
           </section> */}
 
           <Clients />
-
+          <Certificates />
           <div className="w-full flex flex-col items-end relative">
             {/* <BigText /> */}
 
@@ -472,34 +473,11 @@ export default function Testing() {
               </SpinningText>
             </div>
           </div>
+
           <Footer />
-          {/* Footer */}
-          {/* <footer className="w-full flex justify-between items-center py-6 border-t-2 border-[#734425] max-w-[1440px] mx-auto px-5 text-[#734425]">
-            <img src="/images/logo2.png" className="max-w-[132px]" alt="logo" />
-            <div className="grid grid-cols-2 gap-8 text-sm font-light text-[#734425]">
-              <div>
-                <h4 className="mb-4">Home</h4>
-                <h4 className="mb-4">About</h4>
-                <h4 className="mb-4">Our Products</h4>
-              </div>
-              <div>
-                <h4 className="mb-4">LINKEDIN</h4>
-                <h4 className="mb-4">YOUTUBE</h4>
-                <h4 className="mb-4">TWITTER</h4>
-              </div>
-            </div>
-            <div className="social flex items-center gap-4">
-              <a href="#">
-                <img src="/images/fb.png" alt="fb" />
-              </a>
-              <a href="#">
-                <img src="/images/insta.png" alt="insta" />
-              </a>
-            </div>
-          </footer> */}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

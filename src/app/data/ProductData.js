@@ -2,6 +2,7 @@ export const Data = [
   // Single Wall Paper Cups
   {
     imageURL: "/images/p19.jpeg",
+    ml: "100ml / 130ml / 150ml / 170ml / 200ml / 250ml / 300ml / 330ml / 360ml / 450ml / 650ml",
     alt: "Couple at sunset",
     category: "SINGLE WALL PAPER CUPS",
   },
@@ -93,6 +94,8 @@ export const Data = [
   // Rippled Paper Cups
   {
     imageURL: "/images/r21.jpeg",
+    sizes: "4oz / 5oz / 7oz / 8oz / 10oz / 12oz / 16oz",
+    ml: "130ml / 150ml / 200ml / 250ml / 300ml / 360ml / 450ml",
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
   },
@@ -156,7 +159,6 @@ export const Data = [
     alt: "Couple at sunset",
     category: "RIPPLED PAPER CUPS",
   },
-
   {
     imageURL: "/images/r12.jpeg",
     alt: "Couple at sunset",
@@ -220,6 +222,8 @@ export const Data = [
   // Double Wall Paper Cups
   {
     imageURL: "/images/d6.jpeg",
+    sizes: "7oz / 8oz / 10oz / 12oz / 16oz",
+    ml: "200ml / 250ml / 300ml / 360ml / 450ml",
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
   },
@@ -347,6 +351,7 @@ export const Data = [
   {
     imageURL: "/images/d24.jpeg",
     alt: "Couple at sunset",
+    ml: "250ml / 300ml / 330ml / 400ml/ 450ml /650ml",
     category: "2PE CUPS",
   },
   {
@@ -374,9 +379,22 @@ export const Data = [
     alt: "Couple at sunset",
     category: "2PE CUPS",
   },
+  //Double Wall Embossed Paper Cups
+  {
+    imageURL: "/images/comp-2.jpeg",
+    ml: "200ml / 250ml / 360ml / 450ml",
+    alt: "Couple at sunset",
+    category: "DOUBLE WALL EMBOSSED PAPER CUPS",
+  },
+  {
+    imageURL: "/images/comp-3.jpeg",
+    alt: "Couple at sunset",
+    category: "DOUBLE WALL EMBOSSED PAPER CUPS",
+  },
   // Paper Food Containers
   {
     imageURL: "/images/f1.jpeg",
+    ml: "100ml / 150ml / 200ml / 240ml / 350ml",
     alt: "Couple at sunset",
     category: "PAPER FOOD CONTAINER WITH PAPER LID",
   },
@@ -393,6 +411,7 @@ export const Data = [
   // Paper straws
   {
     imageURL: "/images/s1.jpeg",
+    ml: "6mm / 8mm / 10mm",
     alt: "Couple at sunset",
     category: "PAPER STRAWS",
   },
@@ -404,19 +423,40 @@ export const Data = [
   // Plastic Lid for Paper Cups
   {
     imageURL: "/images/l1.jpeg",
+    ml: "74mm / 78mm / 80mm / 82mm / 90mm",
     alt: "Couple at sunset",
-    category: "PLASTIC LID FOR PAPER CUPS",
+    category: "PAPER AND PLASTIC LIDS",
   },
   {
     imageURL: "/images/l2.jpg",
     alt: "Couple at sunset",
-    category: "PLASTIC LID FOR PAPER CUPS",
+    category: "PAPER AND PLASTIC LIDS",
   },
   {
     imageURL: "/images/l3.jpg",
     alt: "Couple at sunset",
-    category: "PLASTIC LID FOR PAPER CUPS",
+    category: "PAPER AND PLASTIC LIDS",
   },
-
-  //DOUBLE WALL BUBBLE CUPS
+  {
+    imageURL: "/images/l4.jpeg",
+    alt: "Couple at sunset",
+    category: "PAPER AND PLASTIC LIDS",
+  },
+  {
+    imageURL: "/images/l5.jpeg",
+    alt: "Couple at sunset",
+    category: "PAPER AND PLASTIC LIDS",
+  },
+  {
+    imageURL: "/images/l6.jpeg",
+    alt: "Couple at sunset",
+    category: "PAPER AND PLASTIC LIDS",
+  },
+  //HEAVY GSM SINGLE WALL
+  {
+    imageURL: "/images/comp-2.jpeg",
+    ml: "200ml / 250ml / 360ml / 450ml",
+    alt: "Couple at sunset",
+    category: "HEAVY GSM SINGLE WALL",
+  },
 ];

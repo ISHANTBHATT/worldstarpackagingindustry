@@ -91,22 +91,22 @@ function Footer() {
             <ul className="mt-4 space-y-4 text-zinc-300">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 text-white/80" />
-                <span className="flex-1">
+                <span className="flex-1 text-base">
                   World Star Packaging Industry, Plot no 53, sector 53, phase I,
                   HSIIDC Kundli, Sonipat,Haryana-131028
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-5 w-5 text-white/80" />
-                <span>+91 98105 01613</span>
+                <span className="flex-1 text-base">+91 98105 01613</span>
               </li>
               {/* <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-5 w-5 text-white/80" />
                 <span>082-245-7253</span>
               </li> */}
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-5 w-5 text-white/80" />
-                <span className="flex-1">
+                <Mail className="mt-0.5 h-5 w-5 text-white/80 " />
+                <span className="text-base flex-1 [overflow-wrap:anywhere] inline-block">
                   worldstarpackagingindustry@gmail.com
                 </span>
               </li>

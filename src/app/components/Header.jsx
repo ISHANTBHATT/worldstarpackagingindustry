@@ -312,11 +312,9 @@
 //     </>
 //   );
 // }
-
-//test 1
-
+// current
 // "use client";
-// import { useEffect, useState } from "react";
+// import { useEffect, useState, useRef } from "react";
 // import Link from "next/link";
 // import { useRouter } from "next/navigation";
 // import { Button } from "@/components/ui/button";
@@ -332,18 +330,43 @@
 //     beverages: false,
 //     foodServing: false,
 //     halfCups: false,
+//     servingAddOn: false,
+//     hotCups: false,
+//     coldCups: false,
 //   });
+
+//   const dropdownRef = useRef(null);
 
 //   useEffect(() => {
 //     const unsub = auth.onAuthStateChanged((currentUser) => {
-//       if (!currentUser) {
-//         // router.replace("/");
-//       } else {
+//       if (currentUser) {
 //         setUser(currentUser);
+//       } else {
+//         setUser(null);
 //       }
 //     });
 //     return () => unsub();
 //   }, [router]);
+
+//   // ✅ Close dropdown when clicking outside
+//   useEffect(() => {
+//     function handleClickOutside(event) {
+//       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+//         setIsProductsDropdownOpen(false);
+//         setExpandedSections({
+//           beverages: false,
+//           foodServing: false,
+//           halfCups: false,
+//           servingAddOn: false,
+//           hotCups: false,
+//           coldCups: false,
+//         });
+//       }
+//     }
+
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => document.removeEventListener("mousedown", handleClickOutside);
+//   }, []);
 
 //   const handleSignOut = async () => {
 //     try {
@@ -358,15 +381,6 @@
 
 //   const closeMobileMenu = () => {
 //     setIsMobileMenuOpen(false);
-//   };
-
-//   const closeDropdown = () => {
-//     setIsProductsDropdownOpen(false);
-//     setExpandedSections({
-//       beverages: false,
-//       foodServing: false,
-//       halfCups: false,
-//     });
 //   };
 
 //   const toggleSection = (section) => {
@@ -385,6 +399,7 @@
 //           </Link>
 //         </div>
 
+//         {/* Desktop Nav */}
 //         <nav className="hidden md:flex gap-10 mr-6 items-center">
 //           <Link
 //             href="/about"
@@ -393,15 +408,11 @@
 //             About
 //           </Link>
 
-//           <div className="relative">
+//           {/* ✅ Fixed Dropdown with click outside */}
+//           <div className="relative" ref={dropdownRef}>
 //             <button
-//               onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
+//               onClick={() => setIsProductsDropdownOpen((prev) => !prev)}
 //               className="flex items-center gap-1 text-black hover:text-gray-600 transition-colors"
-//               onBlur={(e) => {
-//                 if (!e.currentTarget.contains(e.relatedTarget)) {
-//                   setTimeout(() => setIsProductsDropdownOpen(false), 150);
-//                 }
-//               }}
 //             >
 //               Our Products
 //               <ChevronDown
@@ -415,6 +426,7 @@
 //             {isProductsDropdownOpen && (
 //               <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
 //                 <div className="p-4">
+//                   {/* Beverages */}
 //                   <div className="mb-2">
 //                     <button
 //                       onClick={() => toggleSection("beverages")}
@@ -431,48 +443,7 @@
 
 //                     {expandedSections.beverages && (
 //                       <div className="ml-4 space-y-1 mt-2">
-//                         {/* <Link
-//                           href="/products/cold-cups"
-//                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
-//                           onClick={closeDropdown}
-//                         >
-//                           Cold Cups
-//                         </Link>
-//                         <Link
-//                           href="/products/2pe-cups"
-//                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
-//                           onClick={closeDropdown}
-//                         >
-//                           2PE Cups
-//                         </Link> */}
-
-//                         <div>
-//                           <button
-//                             onClick={() => toggleSection("coldCups")}
-//                             className="flex items-center justify-between w-full text-left text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors py-1"
-//                           >
-//                             Cold Cups
-//                             <ChevronRight
-//                               size={14}
-//                               className={`transition-transform ${
-//                                 expandedSections.coldCups ? "rotate-90" : ""
-//                               }`}
-//                             />
-//                           </button>
-
-//                           {expandedSections.coldCups && (
-//                             <div className="ml-4 space-y-1 mt-1">
-//                               <Link
-//                                 href="/products/single-wall-paper-cups"
-//                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
-//                                 onClick={closeDropdown}
-//                               >
-//                                 2PE Cups
-//                               </Link>
-//                             </div>
-//                           )}
-//                         </div>
-
+//                         {/* Hot Cups */}
 //                         <div>
 //                           <button
 //                             onClick={() => toggleSection("hotCups")}
@@ -492,30 +463,64 @@
 //                               <Link
 //                                 href="/products/single-wall-paper-cups"
 //                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
-//                                 onClick={closeDropdown}
-//                               >
-//                                 Single Wall Paper Cups
-//                               </Link>
-//                               <Link
-//                                 href="/products/double-wall-paper-cups"
-//                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
-//                                 onClick={closeDropdown}
+//                                 onClick={() => setIsProductsDropdownOpen(false)}
 //                               >
 //                                 Double Wall Paper Cups
 //                               </Link>
 //                               <Link
-//                                 href="/products/rippled-paper-cups"
+//                                 href="/products/double-wall-paper-cups"
 //                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
-//                                 onClick={closeDropdown}
+//                                 onClick={() => setIsProductsDropdownOpen(false)}
 //                               >
 //                                 Rippled Paper Cups
 //                               </Link>
 //                               <Link
-//                                 href="/products/heavy-gsm-single-wall"
+//                                 href="/products/rippled-paper-cups"
 //                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
-//                                 onClick={closeDropdown}
+//                                 onClick={() => setIsProductsDropdownOpen(false)}
 //                               >
 //                                 Heavy GSM Single Wall
+//                               </Link>
+//                               <Link
+//                                 href="/products/heavy-gsm-single-wall"
+//                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
+//                                 onClick={() => setIsProductsDropdownOpen(false)}
+//                               >
+//                                 Double Wall Bubble Cups
+//                               </Link>
+//                               <Link
+//                                 href="/products/heavy-gsm-single-wall"
+//                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
+//                                 onClick={() => setIsProductsDropdownOpen(false)}
+//                               >
+//                                 Single Wall Paper Cups
+//                               </Link>
+//                             </div>
+//                           )}
+//                         </div>
+
+//                         {/* Cold Cups */}
+//                         <div>
+//                           <button
+//                             onClick={() => toggleSection("coldCups")}
+//                             className="flex items-center justify-between w-full text-left text-sm font-medium text-gray-700 hover:text-gray-600 transition-colors py-1"
+//                           >
+//                             Cold Cups
+//                             <ChevronRight
+//                               size={14}
+//                               className={`transition-transform ${
+//                                 expandedSections.coldCups ? "rotate-90" : ""
+//                               }`}
+//                             />
+//                           </button>
+//                           {expandedSections.coldCups && (
+//                             <div className="ml-4 space-y-1 mt-1">
+//                               <Link
+//                                 href="/products/single-wall-paper-cups"
+//                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
+//                                 onClick={() => setIsProductsDropdownOpen(false)}
+//                               >
+//                                 2PE Cups
 //                               </Link>
 //                             </div>
 //                           )}
@@ -524,6 +529,7 @@
 //                     )}
 //                   </div>
 
+//                   {/* Food Serving */}
 //                   <div className="mb-2">
 //                     <button
 //                       onClick={() => toggleSection("foodServing")}
@@ -543,14 +549,14 @@
 //                         <Link
 //                           href="/products/food-container"
 //                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
-//                           onClick={closeDropdown}
+//                           onClick={() => setIsProductsDropdownOpen(false)}
 //                         >
 //                           Food Container
 //                         </Link>
 //                         <Link
 //                           href="/products/ice-cream-cups"
 //                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
-//                           onClick={closeDropdown}
+//                           onClick={() => setIsProductsDropdownOpen(false)}
 //                         >
 //                           Ice Cream Cups
 //                         </Link>
@@ -558,6 +564,7 @@
 //                     )}
 //                   </div>
 
+//                   {/* Serving Add-on */}
 //                   <div className="mb-2">
 //                     <button
 //                       onClick={() => toggleSection("servingAddOn")}
@@ -575,18 +582,18 @@
 //                     {expandedSections.servingAddOn && (
 //                       <div className="ml-4 space-y-1 mt-2">
 //                         <Link
-//                           href="/products/food-container"
+//                           href="/products/paper-straws"
 //                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
-//                           onClick={closeDropdown}
+//                           onClick={() => setIsProductsDropdownOpen(false)}
 //                         >
 //                           Paper Straws
 //                         </Link>
 //                         <Link
-//                           href="/products/ice-cream-cups"
+//                           href="/products/plastic-paper-lids"
 //                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
-//                           onClick={closeDropdown}
+//                           onClick={() => setIsProductsDropdownOpen(false)}
 //                         >
-//                           Plastic and Paper Lids
+//                           Paper and Plastic Lids
 //                         </Link>
 //                       </div>
 //                     )}
@@ -615,6 +622,7 @@
 //           ) : null}
 //         </nav>
 
+//         {/* Mobile Toggle */}
 //         <button
 //           className="md:hidden p-2 text-black hover:text-gray-600 transition-colors"
 //           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -624,13 +632,7 @@
 //         </button>
 //       </header>
 
-//       {isProductsDropdownOpen && (
-//         <div
-//           className="fixed inset-0 z-40 hidden md:block"
-//           onClick={closeDropdown}
-//         />
-//       )}
-
+//       {/* Mobile Menu (unchanged) */}
 //       {isMobileMenuOpen && (
 //         <>
 //           <div
@@ -660,79 +662,40 @@
 //                   About
 //                 </Link>
 
+//                 {/* Mobile Our Products (simple static for now) */}
 //                 <div className="py-3 border-b border-gray-100">
 //                   <div className="text-lg font-medium text-gray-800 mb-3">
 //                     Our Products
 //                   </div>
 //                   <div className="ml-4 space-y-2">
-//                     <div className="font-medium text-gray-700 mb-2">
-//                       Beverages
-//                     </div>
-//                     <div className="ml-4 space-y-2 text-sm">
-//                       <Link
-//                         href="/products/cold-cups"
-//                         onClick={closeMobileMenu}
-//                         className="block text-gray-600"
-//                       >
-//                         Cold Cups
-//                       </Link>
-//                       <Link
-//                         href="/products/2pe-cups"
-//                         onClick={closeMobileMenu}
-//                         className="block text-gray-600"
-//                       >
-//                         2PE Cups
-//                       </Link>
-//                       <div>
-//                         <div className="font-medium text-gray-600 mb-1">
-//                           Half Cups
-//                         </div>
-//                         <div className="ml-4 space-y-1 text-xs">
-//                           <Link
-//                             href="/products/single-wall-paper-cups"
-//                             onClick={closeMobileMenu}
-//                             className="block text-gray-500"
-//                           >
-//                             Single Wall Paper Cups
-//                           </Link>
-//                           <Link
-//                             href="/products/double-wall-paper-cups"
-//                             onClick={closeMobileMenu}
-//                             className="block text-gray-500"
-//                           >
-//                             Double Wall Paper Cups
-//                           </Link>
-//                           <Link
-//                             href="/products/rippled-paper-cups"
-//                             onClick={closeMobileMenu}
-//                             className="block text-gray-500"
-//                           >
-//                             Rippled Paper Cups
-//                           </Link>
-//                           <Link
-//                             href="/products/heavy-gsm-single-wall"
-//                             onClick={closeMobileMenu}
-//                             className="block text-gray-500"
-//                           >
-//                             Heavy GSM Single Wall
-//                           </Link>
-//                         </div>
-//                       </div>
-//                       <Link
-//                         href="/products/food-container"
-//                         onClick={closeMobileMenu}
-//                         className="block text-gray-600"
-//                       >
-//                         Food Container
-//                       </Link>
-//                       <Link
-//                         href="/products/ice-cream-cups"
-//                         onClick={closeMobileMenu}
-//                         className="block text-gray-600"
-//                       >
-//                         Ice Cream Cups
-//                       </Link>
-//                     </div>
+//                     <Link
+//                       href="/products/cold-cups"
+//                       onClick={closeMobileMenu}
+//                       className="block text-gray-600"
+//                     >
+//                       Cold Cups
+//                     </Link>
+//                     <Link
+//                       href="/products/2pe-cups"
+//                       onClick={closeMobileMenu}
+//                       className="block text-gray-600"
+//                     >
+//                       2PE Cups
+//                     </Link>
+//                     <Link
+//                       href="/products/food-container"
+//                       onClick={closeMobileMenu}
+//                       className="block text-gray-600"
+//                     >
+//                       Food Container
+//                     </Link>
+//                     <Link
+//                       href="/products/ice-cream-cups"
+//                       onClick={closeMobileMenu}
+//                       className="block text-gray-600"
+//                     >
+//                       Ice Cream Cups
+//                     </Link>
 //                   </div>
 //                 </div>
 
@@ -741,7 +704,7 @@
 //                   onClick={closeMobileMenu}
 //                   className="text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors py-3 border-b border-gray-100"
 //                 >
-//                   Gallery
+//                   Compostable Paper Cups
 //                 </Link>
 //                 <Link
 //                   href="/contact"
@@ -775,8 +738,28 @@ import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { auth } from "@/lib/firebase.config.js";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+
+// Mock auth object for when Firebase is not configured
+const mockAuth = {
+  onAuthStateChanged: (callback) => {
+    callback(null);
+    return () => {};
+  },
+  signOut: async () => {
+    console.log("Mock sign out");
+  },
+};
+
+// Try to import Firebase auth, fallback to mock if not available
+let auth;
+try {
+  const firebaseConfig = require("@/lib/firebase.config.js");
+  auth = firebaseConfig.auth;
+} catch (error) {
+  console.warn("Firebase config not found, using mock auth");
+  auth = mockAuth;
+}
 
 export default function Header() {
   const router = useRouter();
@@ -918,42 +901,35 @@ export default function Header() {
                           {expandedSections.hotCups && (
                             <div className="ml-4 space-y-1 mt-1">
                               <Link
-                                href="/products/single-wall-paper-cups"
+                                href="/our-products/double-wall-paper-cups"
                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
                                 onClick={() => setIsProductsDropdownOpen(false)}
                               >
                                 Double Wall Paper Cups
                               </Link>
                               <Link
-                                href="/products/double-wall-paper-cups"
+                                href="/our-products/rippled-paper-cups"
                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
                                 onClick={() => setIsProductsDropdownOpen(false)}
                               >
                                 Rippled Paper Cups
                               </Link>
                               <Link
-                                href="/products/rippled-paper-cups"
+                                href="/our-products/heavy-gsm-single-wall"
                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
                                 onClick={() => setIsProductsDropdownOpen(false)}
                               >
                                 Heavy GSM Single Wall
                               </Link>
                               <Link
-                                href="/products/heavy-gsm-single-wall"
+                                href="/our-products/double-wall-embossed-paper-cups"
                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
                                 onClick={() => setIsProductsDropdownOpen(false)}
                               >
-                                Double Wall Bubble Cups
+                                DOUBLE WALL EMBOSSED PAPER CUPS
                               </Link>
-                              {/* <Link
-                                href="/products/heavy-gsm-single-wall"
-                                className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
-                                onClick={() => setIsProductsDropdownOpen(false)}
-                              >
-                                2PE Cups
-                              </Link> */}
                               <Link
-                                href="/products/heavy-gsm-single-wall"
+                                href="/our-products/single-wall-paper-cups"
                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
                                 onClick={() => setIsProductsDropdownOpen(false)}
                               >
@@ -980,7 +956,7 @@ export default function Header() {
                           {expandedSections.coldCups && (
                             <div className="ml-4 space-y-1 mt-1">
                               <Link
-                                href="/products/single-wall-paper-cups"
+                                href="/our-products/2pe-cups"
                                 className="block text-xs text-gray-500 hover:text-gray-700 transition-colors py-1"
                                 onClick={() => setIsProductsDropdownOpen(false)}
                               >
@@ -1011,14 +987,14 @@ export default function Header() {
                     {expandedSections.foodServing && (
                       <div className="ml-4 space-y-1 mt-2">
                         <Link
-                          href="/products/food-container"
+                          href="/our-products/food-container"
                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
                           onClick={() => setIsProductsDropdownOpen(false)}
                         >
                           Food Container
                         </Link>
                         <Link
-                          href="/products/ice-cream-cups"
+                          href="/our-products/ice-cream-cups"
                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
                           onClick={() => setIsProductsDropdownOpen(false)}
                         >
@@ -1046,14 +1022,14 @@ export default function Header() {
                     {expandedSections.servingAddOn && (
                       <div className="ml-4 space-y-1 mt-2">
                         <Link
-                          href="/products/paper-straws"
+                          href="/our-products/paper-straws"
                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
                           onClick={() => setIsProductsDropdownOpen(false)}
                         >
                           Paper Straws
                         </Link>
                         <Link
-                          href="/products/plastic-paper-lids"
+                          href="/our-products/plastic-paper-lids"
                           className="block text-sm text-gray-600 hover:text-gray-800 transition-colors py-1"
                           onClick={() => setIsProductsDropdownOpen(false)}
                         >
@@ -1068,7 +1044,7 @@ export default function Header() {
           </div>
 
           <Link
-            href="/gallery"
+            href="/compostable"
             className="text-black hover:text-gray-600 transition-colors"
           >
             Compostable Paper Cups
@@ -1096,7 +1072,7 @@ export default function Header() {
         </button>
       </header>
 
-      {/* Mobile Menu (unchanged) */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <>
           <div
@@ -1126,39 +1102,39 @@ export default function Header() {
                   About
                 </Link>
 
-                {/* Mobile Our Products (simple static for now) */}
+                {/* Mobile Our Products */}
                 <div className="py-3 border-b border-gray-100">
                   <div className="text-lg font-medium text-gray-800 mb-3">
                     Our Products
                   </div>
                   <div className="ml-4 space-y-2">
                     <Link
-                      href="/products/cold-cups"
-                      onClick={closeMobileMenu}
-                      className="block text-gray-600"
-                    >
-                      Cold Cups
-                    </Link>
-                    <Link
-                      href="/products/2pe-cups"
+                      href="/our-products/2pe-cups"
                       onClick={closeMobileMenu}
                       className="block text-gray-600"
                     >
                       2PE Cups
                     </Link>
                     <Link
-                      href="/products/food-container"
+                      href="/our-products/food-container"
                       onClick={closeMobileMenu}
                       className="block text-gray-600"
                     >
                       Food Container
                     </Link>
                     <Link
-                      href="/products/ice-cream-cups"
+                      href="/our-products/ice-cream-cups"
                       onClick={closeMobileMenu}
                       className="block text-gray-600"
                     >
                       Ice Cream Cups
+                    </Link>
+                    <Link
+                      href="/our-products/paper-straws"
+                      onClick={closeMobileMenu}
+                      className="block text-gray-600"
+                    >
+                      Paper Straws
                     </Link>
                   </div>
                 </div>

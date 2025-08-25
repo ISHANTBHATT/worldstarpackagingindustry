@@ -82,7 +82,7 @@ export default function Clients() {
                           alt={logo.name}
                           width={120}
                           height={40}
-                          className="opacity-70 hover:opacity-100 transition-opacity duration-200"
+                          className="opacity-100 hover:opacity-100 transition-opacity duration-200"
                         />
                       </div>
                     )
@@ -104,7 +104,7 @@ export default function Clients() {
                           alt={logo.name}
                           width={120}
                           height={40}
-                          className="opacity-70 hover:opacity-100 transition-opacity duration-200"
+                          className=""
                         />
                       </div>
                     )
@@ -126,7 +126,7 @@ export default function Clients() {
                           alt={logo.name}
                           width={120}
                           height={40}
-                          className="opacity-70 hover:opacity-100 transition-opacity duration-200"
+                          className=""
                         />
                       </div>
                     )
