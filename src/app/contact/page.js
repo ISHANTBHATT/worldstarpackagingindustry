@@ -324,7 +324,7 @@ export default function Page() {
       </section>
 
       {/* CTA banner */}
-      <section className="mx-auto max-w-6xl px-4 pb-14 sm:pb-16 lg:pb-20">
+      {/* <section className="mx-auto max-w-6xl px-4 pb-14 sm:pb-16 lg:pb-20">
         <div className="relative overflow-hidden rounded-xl border border-[#D7C9BB]">
           <div className="absolute inset-0">
             <Image
@@ -351,9 +351,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* <Footer /> */}
+      </section> */}
 
       {/* Reference image (hidden) */}
       <div className="sr-only">
@@ -386,8 +384,8 @@ function Info({ icon, title, value }) {
         <span className="text-white/90">{icon}</span>
       </div>
       <div>
-        <p className="text-sm font-semibold text-white/95">{title}</p>
-        <p className="text-sm text-zinc-400 [overflow-wrap:anywhere] inline-block">
+        <p className="text-sm font-semibold text-[#524438]">{title}</p>
+        <p className="text-sm text-[#524438] [overflow-wrap:anywhere] inline-block">
           {value}
         </p>
       </div>
