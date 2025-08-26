@@ -1140,7 +1140,7 @@ export default function Header() {
                 </div>
 
                 <Link
-                  href="/gallery"
+                  href="/compostable"
                   onClick={closeMobileMenu}
                   className="text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors py-3 border-b border-gray-100"
                 >

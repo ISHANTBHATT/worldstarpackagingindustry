@@ -381,16 +381,16 @@ export const Data = [
   },
   //Double Wall Embossed Paper Cups
   {
-    imageURL: "/images/e1.jpeg",
+    imageURL: "/images/dwe1.jpeg",
     ml: "200ml / 250ml / 360ml / 450ml",
     alt: "Couple at sunset",
     category: "DOUBLE WALL EMBOSSED PAPER CUPS",
   },
-  {
-    imageURL: "/images/e2.jpeg",
-    alt: "Couple at sunset",
-    category: "DOUBLE WALL EMBOSSED PAPER CUPS",
-  },
+  // {
+  //   imageURL: "/images/e2.jpeg",
+  //   alt: "Couple at sunset",
+  //   category: "DOUBLE WALL EMBOSSED PAPER CUPS",
+  // },
   // Paper Food Containers
   {
     imageURL: "/images/f1.jpeg",
@@ -449,6 +449,11 @@ export const Data = [
   },
   {
     imageURL: "/images/l6.jpeg",
+    alt: "Couple at sunset",
+    category: "PAPER AND PLASTIC LIDS",
+  },
+  {
+    imageURL: "/images/l7.jpeg",
     alt: "Couple at sunset",
     category: "PAPER AND PLASTIC LIDS",
   },
