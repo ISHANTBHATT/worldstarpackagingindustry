@@ -230,7 +230,7 @@ export default function Page() {
                 Contact Us
               </p>
               <h2 className="text-3xl font-semibold tracking-tight">
-                Get In Touch
+                Let&apos;s Connect
               </h2>
             </div>
 
@@ -280,9 +280,10 @@ export default function Page() {
           <div className="flex flex-col justify-between">
             <div>
               <p className="max-w-xl text-[#524438]">
-                In tempus nisl turpis, at ultricies dui eleifend a. Quisque et
-                quam vel nunc consectetur pharetra euismod et elit. Morbi nibh
-                tortor, ullamcorper id purus eu, rhoncus consequat velit.
+                Have a question or are you ready to take your packaging to the
+                next level? Our team at WorldStar Packaging Industry is always
+                happy to help. Reach out today—let&apos;s create eco-friendly,
+                innovative solutions together!
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -380,10 +381,13 @@ function FormField({ label, children }) {
 function Info({ icon, title, value }) {
   return (
     <div className="flex items-start gap-3 rounded-lg border border-zinc-800 bg-[#EBDFD3] p-4">
-      <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-full bg-[#D7C9BB]">
-        <span className="text-white/90">{icon}</span>
+      <div className="flex">
+        <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-full bg-[#D7C9BB]">
+          <span className="text-white/90">{icon}</span>
+        </div>
       </div>
-      <div>
+
+      <div className="">
         <p className="text-sm font-semibold text-[#524438]">{title}</p>
         <p className="text-sm text-[#524438] [overflow-wrap:anywhere] inline-block">
           {value}
