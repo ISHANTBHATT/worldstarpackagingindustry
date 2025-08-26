@@ -381,13 +381,13 @@ export const Data = [
   },
   //Double Wall Embossed Paper Cups
   {
-    imageURL: "/images/comp-2.jpeg",
+    imageURL: "/images/e1.jpeg",
     ml: "200ml / 250ml / 360ml / 450ml",
     alt: "Couple at sunset",
     category: "DOUBLE WALL EMBOSSED PAPER CUPS",
   },
   {
-    imageURL: "/images/comp-3.jpeg",
+    imageURL: "/images/e2.jpeg",
     alt: "Couple at sunset",
     category: "DOUBLE WALL EMBOSSED PAPER CUPS",
   },
@@ -454,7 +454,7 @@ export const Data = [
   },
   //HEAVY GSM SINGLE WALL
   {
-    imageURL: "/images/comp-2.jpeg",
+    imageURL: "/images/h1.jpeg",
     ml: "200ml / 250ml / 360ml / 450ml",
     alt: "Couple at sunset",
     category: "HEAVY GSM SINGLE WALL",
