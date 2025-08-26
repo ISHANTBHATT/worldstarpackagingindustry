@@ -18,7 +18,7 @@ export default function QRCodeSection() {
 
   return (
     <section className="mb-16 ">
-      <Card className="border-accent bg-[#B2E7BC]/60 shadow-lg">
+      <Card className="border-accent bg-[#B2E7BC] shadow-lg">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl mb-4 flex items-center justify-center gap-2">
             <Award className="w-8 h-8 text-white" />

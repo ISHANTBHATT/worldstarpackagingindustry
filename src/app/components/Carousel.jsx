@@ -528,7 +528,7 @@ const products = [
     title: "GOURMET FRESH COFFEE",
     price: "$ 20",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+      "Great coffee deserves a great cup. Our paper cups, designed for Gourmet Fresh Coffee, bring together strength, sustainability, and style — the perfect blend for your perfect brew.",
     bgColor: "#F5ECE4",
     image: "/images/c1.png",
   },
@@ -536,7 +536,7 @@ const products = [
     title: "COFFE EAT",
     price: "$ 20",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+      "Fresh coffee. Fresh design. Fresh experience. Worldstar Packaging creates specialty cups for Coffee Eat, where quality packaging meets quality brewing.",
     bgColor: "#F5ECE4",
     image: "/images/c2.png",
   },
@@ -544,7 +544,7 @@ const products = [
     title: "INDIGO",
     price: "$ 20",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+      "Every detail matters in the skies! The crafted paper cups for IndiGo Airlines deliver more than just coffee; they deliver comfort, convenience, and quality for passengers across every journey. ",
     bgColor: "#F5ECE4",
     image: "/images/c5.png",
   },
@@ -552,7 +552,7 @@ const products = [
     title: "CHAAYOS",
     price: "$ 20",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.",
+      "Chai that feels like home, cups that feel like Chaayos! We make sure every blend of chai experiments and comfort classics is served in cups crafted to keep the flavor, vibe, and freshness alive.",
     bgColor: "#F5ECE4",
     image: "/images/c4.png",
   },

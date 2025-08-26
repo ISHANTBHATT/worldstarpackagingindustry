@@ -39,21 +39,27 @@ export default function CompostableCupsBrochure() {
             </div>
 
             <p className="text-lg leading-relaxed">
-              We are thrilled to announce that{" "}
-              <strong>WORLDSTAR PACKAGING INDUSTRY</strong> has officially
-              received <strong>CPCB (Central Pollution Control Board)</strong>{" "}
-              certification for manufacturing compostable paper cups! This
-              certification marks a significant milestone in our commitment to
-              sustainability and eco-friendly practices.
+              At <strong>WorldStar Packaging Industry</strong>, we take pride in
+              being leaders in sustainable and eco-friendly packaging solutions.
+              Our<strong> CPCB Certified Compostable Paper Cups </strong> are
+              thoughtfully designed to meet the highest environmental and safety
+              standards, making them a responsible choice for businesses
+              committed to sustainability.
             </p>
 
             <p className="text-lg leading-relaxed">
-              As part of our ongoing efforts to provide innovative and
-              environmentally responsible solutions, we are proud to offer
-              high-quality compostable paper cups that meet the stringent
-              standards set by the CPCB. These cups are made from materials that
-              are biodegradable and compostable, contributing to a cleaner,
-              greener future.
+              Crafted from 100% biodegradable materials, these cups naturally
+              break down after use, reducing waste and minimizing environmental
+              impact. Perfect for cafes, restaurants, and events, they combine
+              durability, functionality, and eco-conscious design, so you can
+              serve your beverages confidently while contributing to a greener
+              planet.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              By choosing our compostable cups, you&apos;re not just serving
+              drinks—you&apos;re making a statement about your brand&apos;s
+              commitment to the environment.
             </p>
           </div>
 
@@ -82,9 +88,10 @@ export default function CompostableCupsBrochure() {
                     <h3 className="font-semibold text-lg mb-2">
                       CPCB Certified
                     </h3>
-                    <p className="text-muted-foreground">
-                      Ensuring compliance with environmental and regulatory
-                      standards.
+                    <p className="text-muted-foreground text-base">
+                      Our cups are officially recognized by the Central
+                      Pollution Control Board, affirming our commitment to
+                      environmental sustainability.
                     </p>
                   </div>
                 </div>
@@ -95,8 +102,9 @@ export default function CompostableCupsBrochure() {
                     <h3 className="font-semibold text-lg mb-2">
                       Eco-friendly Materials
                     </h3>
-                    <p className="text-muted-foreground">
-                      Made from biodegradable, compostable materials.
+                    <p className="text-muted-foreground text-base">
+                      Made from biodegradable and compostable materials, our
+                      cups are designed to minimize environmental impact.
                     </p>
                   </div>
                 </div>
@@ -107,9 +115,9 @@ export default function CompostableCupsBrochure() {
                     <h3 className="font-semibold text-lg mb-2">
                       Sustainable Choice
                     </h3>
-                    <p className="text-muted-foreground">
-                      Ideal for businesses looking to reduce their carbon
-                      footprint and support environmental sustainability.
+                    <p className="text-muted-foreground text-base">
+                      Ideal for businesses aiming to reduce their carbon
+                      footprint and support a greener future.
                     </p>
                   </div>
                 </div>

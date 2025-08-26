@@ -31,8 +31,9 @@ function Footer() {
               <img src="/images/logo.png" className="max-w-32" alt="logo" />
             </div>
             <p className="mt-4 max-w-sm text-sm text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis.
+              For over 25 years, WorldStar Packaging Industry has been shaping
+              the way beverages are served with packaging that blends
+              innovation, sustainability, and trust.
             </p>
             <div className="mt-4 flex items-center gap-3 text-white">
               <Social

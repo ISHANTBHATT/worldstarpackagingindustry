@@ -38,13 +38,16 @@ export default function Clients() {
           <div className="space-y-6">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                Integrate <span className="text-[#734425]">MakeForms</span>
+                Trusted by <span className="text-[#734425]">Brands,</span>
                 <br />
-                with your favourite apps
+                Served with Care
               </h1>
               <p className="text-lg text-gray-600 max-w-md">
-                Automate and personalize your forms. Integrate existing tools
-                from your workflow to build a close knit data management system.
+                From your favourite cafés to leading food chains, our
+                eco-friendly cups and straws carry the mark of quality and
+                reliability. Each brand you see here partners with us to ensure
+                their beverages are served in style—sustainably, safely, and
+                with a touch of innovation.
               </p>
             </div>
             <button className="bg-[#734425] hover:bg-[#6b3c22] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">

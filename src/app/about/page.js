@@ -107,9 +107,7 @@ export default function Page() {
               SINCE 2003
             </p> */}
             <h2 className="text-4xl md:text-5xl font-light mb-8">
-              We are India&apos;s Largest Paper Cup
-              <br />
-              Manufacturers and Exporter{" "}
+              {"“Crafting Every Sip with Excellence”"}
               {/* <span className="text-gray-400">
                 FOUR
                 <br />
@@ -119,24 +117,36 @@ export default function Page() {
           </div>
           <div className="text-left mb-16">
             <p className=" text-gray-400 mb-4 tracking-wider">
-              We are happy to present ourselves as one of the largest paper cup
-              production unit in India. We have a 21 years of experience behind
-              us, which is hugely supported with a wide customer base. We can
-              provide complete RTD packaging solutions for all customer needs.
-              Some of our esteemed customers include Nestle India, Café Coffee
-              Day, Chayyos, IRCTC , Haldirams, Air-Asia, Vistara etc. We have a
-              complete profile range to cater to demands of Global customer
-              requirements as well which has helped us make in roads to Europe
-              for past year or so.
+              At WorldStar Packaging, we are proud to be India&apos;s largest
+              paper cup manufacturer and exporter, with over 25 years of
+              experience delivering premium packaging solutions. Our expertise
+              spans across RTD (Ready-to-Drink) packaging, serving a wide
+              spectrum of businesses, from iconic Indian brands to global
+              clients.
             </p>
             <p className=" text-gray-400 mb-4 tracking-wider">
-              Our facilities are equipped with state of art machinery with in
-              house processing from start to end product. We have a production
-              capacity of over 4 million cups a day our production facilities
-              are supported with a traceability system for every single cup
-              produced. We are ISO9000, SEDEX certified for our processes. And
-              all our products are tested for all kind of food safety tests from
-              SGS. We look forward to hearing from you very soon.
+              Some of our valued customers include Nestlé India, Café Coffee
+              Day, Chaayos, IRCTC, Haldiram&apos;s, AirAsia, IndiGo Airlines,
+              and many others. In recent years, we have also expanded our
+              footprint to Europe, offering our globally compliant packaging
+              solutions to meet international standards.
+            </p>
+            <p className=" text-gray-400 mb-4 tracking-wider">
+              Every product we create reflects precision, craftsmanship, and
+              innovative design. Equipped with state-of-the-art machinery and a
+              fully integrated in-house production process, we have the capacity
+              to produce over 4 million cups daily, all backed by a robust
+              traceability system.
+            </p>
+            <p className=" text-gray-400 mb-4 tracking-wider">
+              Quality and safety are at the core of our operations. We are ISO
+              9000 and SEDEX certified, and all our products undergo stringent
+              food safety testing by SGS.
+            </p>
+            <p className=" text-gray-400 mb-4 tracking-wider">
+              At WorldStar Packaging, we are committed to sustainability,
+              reliability, and innovation, helping brands serve every sip with
+              style, safety, and care.
             </p>
           </div>
 
@@ -369,7 +379,7 @@ export default function Page() {
               {/* Headline with rotated badge */}
               <div className="relative">
                 <h1 className="text-3xl font-light leading-[1.15] tracking-[-0.02em] sm:text-4xl md:text-5xl lg:text-6xl">
-                  {"Our Commitment: Superior Quality, Value, and Service"}
+                  {"Our Commitment: Quality, Value, and Service"}
                 </h1>
 
                 {/* Rotated pill */}
@@ -381,24 +391,38 @@ export default function Page() {
               {/* Subtext */}
               <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
                 {
-                  "We Will Provide  Superior Quality Paper Cups And Products With Utmost Quality And Value  Addition."
+                  "At WorldStar Packaging, we are dedicated to delivering premium paper cups and related products that combine superior quality with true value. Meeting and exceeding our customers’ expectations is at the heart of everything we do."
                 }
               </p>
 
               <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
-                {"The dedication to fulfill our customer’s needs is above all"}
+                {"Why Choose Us:"}
               </p>
 
               {/* Checklist */}
               <div className="mt-6 space-y-4 md:mt-8">
-                <FeatureItem> {"Whosale Suppliers"} </FeatureItem>
-                <FeatureItem> {"Affordable Prices"} </FeatureItem>
-                <FeatureItem> {"No Hidden Costs"} </FeatureItem>
-                <FeatureItem> {"Wide Variety Of Paper Cups"} </FeatureItem>
-                <FeatureItem> {"Ripples Paper CUPS"} </FeatureItem>
-                <FeatureItem> {"Paper Straws"} </FeatureItem>
-                <FeatureItem> {"Fast Shipment"} </FeatureItem>
+                <FeatureItem>
+                  {"Trusted wholesale supplier at affordable prices"}
+                </FeatureItem>
+                <FeatureItem>
+                  {"No hidden costs—transparent pricing always"}
+                </FeatureItem>
+                <FeatureItem>
+                  {
+                    "Wide variety of paper cups and accessories, including Ripples Paper Cups and Paper Straws"
+                  }
+                </FeatureItem>
+                <FeatureItem>
+                  {
+                    "Fast and reliable shipment to ensure your business runs smoothly"
+                  }
+                </FeatureItem>
               </div>
+              <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
+                {
+                  "We are committed to supporting your brand with packaging solutions that are innovative, sustainable, and dependable."
+                }
+              </p>
             </div>
 
             {/* Right: Image Card */}
@@ -416,14 +440,14 @@ export default function Page() {
           </section>
 
           {/* Optional: Design reference below for comparison (from user screenshot) */}
-          <div className="sr-only">
+          {/* <div className="sr-only">
             <Image
               src="/images/screenshot-hero.png"
               alt="Reference design provided by user"
               width={1520}
               height={748}
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -442,11 +466,11 @@ export default function Page() {
             </div>
             <div>
               <h3 className="text-4xl font-light mb-6">
-                Our Commitment: Superior Quality, Value, and Service
+                {"“Where Design Meets Function”"}
               </h3>
               <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-                We Will Provide Superior Quality Paper Cups And Products With
-                Utmost Quality And Value Addition
+                Our paper cups and straws are more than just packaging,
+                they&apos;re a canvas for creativity.
               </p>
 
               <div className="grid grid-cols-3 gap-4 mb-8">
@@ -474,9 +498,9 @@ export default function Page() {
               </div>
 
               <p className="text-xs text-gray-500 font-light">
-                These high-performance metals incorporate cutting-edge alloy
-                compositions, engineered for durability and aesthetic excellence
-                while maintaining environmental standards.
+                Blending modern aesthetics with practical functionality, every
+                design is crafted to enhance your brand and make every sip
+                memorable.
               </p>
             </div>
           </div>
