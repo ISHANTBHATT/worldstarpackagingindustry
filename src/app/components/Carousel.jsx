@@ -642,43 +642,10 @@ export default function Carousel() {
         />
       </div>
 
-      {/* Top Navigation Bar */}
-      {/* <header className="w-full flex items-center justify-between border-b border-white/30 px-6 py-2 z-10 relative bg-transparent">
-        <div className="flex-shrink-0 flex items-center">
-          <img src="/images/logo2.png" alt="Logo" className="w-14 h-14" />
-        </div>
-        <nav className="flex gap-10 mr-6">
-          <a
-            href="about"
-            className="text-black hover:text-gray-600 transition-colors"
-          >
-            About
-          </a>
-          <a
-            href="our-products"
-            className="text-black hover:text-gray-600 transition-colors"
-          >
-            Our Products
-          </a>
-          <a
-            href="#"
-            className="text-black hover:text-gray-600 transition-colors"
-          >
-            Gallery
-          </a>
-          <a
-            href="#"
-            className="text-black hover:text-gray-600 transition-colors"
-          >
-            Contact
-          </a>
-        </nav>
-      </header> */}
-
       {/* Two-Column Split */}
-      <main className="h-[calc(100vh-64px)] flex w-full relative">
+      <main className="h-[calc(100vh-64px)] flex md:flex-row flex-col-reverse w-full relative">
         {/* Left (Textual content) */}
-        <section className="flex flex-col justify-center pl-[5vw] pr-[2vw] w-[48%] border-r border-white/30 z-10 relative">
+        <section className="flex flex-col justify-center pl-[5vw] pr-[2vw] w-full md:w-[48%] border-r border-white/30 z-10 relative">
           <h1
             className={`font-aboreto text-[3vw] leading-[1.1] text-black mb-4 animate-showContent`}
           >
@@ -695,8 +662,8 @@ export default function Carousel() {
           </button>
         </section>
         {/* Right (Image pane) */}
-        <section className="w-[52%] flex flex-row items-center relative overflow-x-visible z-10">
-          <div className="flex flex-row items-center h-full w-full relative gap-0">
+        <section className="w-full md:w-[52%] flex flex-row items-center relative overflow-x-visible z-10">
+          <div className="flex flex-row items-center h-full w-full relative gap-10">
             {/* Main product image animated */}
             <div
               className={`flex flex-col items-center justify-center w-2/3 h-full relative ${

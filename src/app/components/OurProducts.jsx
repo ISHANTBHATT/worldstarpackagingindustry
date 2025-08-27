@@ -80,11 +80,11 @@ export default function OurProducts() {
           Our Products
         </h2>
 
-        <div className="flex flex-wrap justify-between gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-around gap-6 md:gap-8">
           {springItems.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center max-w-[120px]"
+              className="flex flex-col items-center text-center max-w-[120px] mx-4"
             >
               <div
                 className={`w-40 h-40 rounded-full ${item.bgColor} flex items-center justify-center mb-3 cursor-pointer hover:scale-105 transition-transform duration-200 overflow-hidden`}

@@ -11,7 +11,7 @@ export default function CompostableCupsBrochure() {
       {/* Header Section */}
       <header className=" text-[#734425] py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl md:text-7xl font-light tracking-tight mb-8">
+          <h1 className="text-4xl md:text-7xl font-light tracking-tight mb-8">
             COMPOSTABLE PAPER CUPS
           </h1>
           <p className="text-xl md:text-2xl font-light">
@@ -165,13 +165,16 @@ export default function CompostableCupsBrochure() {
         </section>
 
         {/* Call to Action */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Link href="/contact">
-            <Button size="lg" className="px-8 py-3 text-lg">
+            <Button
+              size="lg"
+              className="px-8 py-3 text-base sm:text-lg break-words"
+            >
               Contact Us for More Information
             </Button>
           </Link>
-        </div>
+        </div> */}
       </main>
     </div>
   );

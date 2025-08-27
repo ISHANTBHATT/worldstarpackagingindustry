@@ -25,26 +25,26 @@ export default function QRCodeSection() {
             CPCB Certification Verification
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        {/* <CardContent>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-center">
               <div className="bg-white p-6 rounded-lg shadow-lg inline-block mb-4">
                 <img
                   src="/images/qr.png"
                   alt="QR Code for Certificate Verification"
-                  className="w-48 h-48 mx-auto"
+                  className="w-32 h-32 sm:w-48 sm:h-48 mx-auto"
                 />
               </div>
-              <p className="text-lg font-medium mb-4">
+              <p className="text-lg font-medium mb-4 break-words">
                 Scan QR Code to View Certificate
               </p>
-              {/* <Button
+              <Button
                 onClick={() => setShowCertificate(true)}
                 className="flex items-center gap-2"
               >
                 <QrCode className="w-4 h-4" />
                 View Certificate Online
-              </Button> */}
+              </Button>
             </div>
 
             <div className="space-y-4">
@@ -72,9 +72,67 @@ export default function QRCodeSection() {
                 <span>Product Category: Compostable Food Packaging</span>
               </div>
 
-              <Badge variant="secondary" className="mt-4 bg-[#B2E7BC]">
+              <Badge
+                variant="secondary"
+                className="mt-4 bg-[#B2E7BC] break-words"
+              >
                 Verified by Central Pollution Control Board
               </Badge>
+            </div>
+          </div>
+        </CardContent> */}
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="text-center">
+              <div className="bg-white p-6 rounded-lg shadow-lg inline-block mb-4">
+                <img
+                  src="/images/qr.png"
+                  alt="QR Code for Certificate Verification"
+                  className="w-32 h-32 sm:w-48 sm:h-48 mx-auto"
+                />
+              </div>
+              <p className="text-lg font-medium mb-4 break-words">
+                Scan QR Code to View Certificate
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold mb-4 break-words">
+                Certificate Details
+              </h3>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-white shrink-0" />
+                <span className="break-words overflow-hidden">
+                  CPCB Registration Number: WP/2024/ECO/001
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-white shrink-0" />
+                <span className="break-words">
+                  Certification Date: January 2024
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-white shrink-0" />
+                <span className="break-words">Valid Until: January 2027</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-white shrink-0" />
+                <span className="break-words">
+                  Product Category: Compostable Food Packaging
+                </span>
+              </div>
+
+              <div
+                // variant="secondary"
+                className="mt-4 bg-[#B2E7BC] break-words text-sm"
+              >
+                Verified by Central Pollution Control Board
+              </div>
             </div>
           </div>
         </CardContent>

@@ -880,7 +880,7 @@ export default function Testing() {
                     Rippled
                   </div>
                 </div>
-                <div className="product flex flex-col items-center justify-end">
+                <div className="hidden lg:flex product flex-col items-center justify-end">
                   <div className="name text-lg sm:text-xl font-medium  text-center">
                     Plastic Lid for Paper cups
                   </div>
