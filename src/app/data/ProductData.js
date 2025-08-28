@@ -42,11 +42,6 @@ export const Data = [
     category: "SINGLE WALL PAPER CUPS",
   },
   {
-    imageURL: "/images/p8.jpeg",
-    alt: "Dog on pool float",
-    category: "SINGLE WALL PAPER CUPS",
-  },
-  {
     imageURL: "/images/p9.jpeg",
     alt: "Coffee beans",
     category: "SINGLE WALL PAPER CUPS",
@@ -228,17 +223,17 @@ export const Data = [
     category: "DOUBLE WALL PAPER CUPS",
   },
   {
+    imageURL: "/images/d3.jpeg",
+    alt: "Couple at sunset",
+    category: "DOUBLE WALL PAPER CUPS",
+  },
+  {
     imageURL: "/images/d1.jpeg",
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
   },
   {
     imageURL: "/images/d2.jpeg",
-    alt: "Couple at sunset",
-    category: "DOUBLE WALL PAPER CUPS",
-  },
-  {
-    imageURL: "/images/d3.jpeg",
     alt: "Couple at sunset",
     category: "DOUBLE WALL PAPER CUPS",
   },
@@ -386,11 +381,11 @@ export const Data = [
     alt: "Couple at sunset",
     category: "DOUBLE WALL EMBOSSED PAPER CUPS",
   },
-  // {
-  //   imageURL: "/images/e2.jpeg",
-  //   alt: "Couple at sunset",
-  //   category: "DOUBLE WALL EMBOSSED PAPER CUPS",
-  // },
+  {
+    imageURL: "/images/dwe2.jpeg",
+    alt: "Couple at sunset",
+    category: "DOUBLE WALL EMBOSSED PAPER CUPS",
+  },
   // Paper Food Containers
   {
     imageURL: "/images/f1.jpeg",
@@ -459,9 +454,34 @@ export const Data = [
   },
   //HEAVY GSM SINGLE WALL
   {
-    imageURL: "/images/h1.jpeg",
+    imageURL: "/images/hgsm1.jpeg",
     ml: "200ml / 250ml / 360ml / 450ml",
     alt: "Couple at sunset",
     category: "HEAVY GSM SINGLE WALL",
+  },
+  {
+    imageURL: "/images/hgsm2.jpeg",
+    ml: "200ml / 250ml / 360ml / 450ml",
+    alt: "Couple at sunset",
+    category: "HEAVY GSM SINGLE WALL",
+  },
+  {
+    imageURL: "/images/hgsm3.jpeg",
+    ml: "200ml / 250ml / 360ml / 450ml",
+    alt: "Couple at sunset",
+    category: "HEAVY GSM SINGLE WALL",
+  },
+  {
+    imageURL: "/images/hgsm4.jpeg",
+    ml: "200ml / 250ml / 360ml / 450ml",
+    alt: "Couple at sunset",
+    category: "HEAVY GSM SINGLE WALL",
+  },
+  //Ice Cream Cups
+  {
+    imageURL: "/images/ice1.jpeg",
+    ml: "200ml / 250ml / 360ml / 450ml",
+    alt: "Couple at sunset",
+    category: "ICE CREAM CUPS",
   },
 ];
