@@ -1552,33 +1552,33 @@ export default function Header() {
 
       {/* Enhanced Mobile Menu - Fullscreen with animation */}
       <div
-        className={`fixed inset-0 z-50 md:hidden transform transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 z-50 md:hidden transform transition-all duration-500 ease-in-out overflow-hidden ${
           isMobileMenuOpen
             ? "translate-x-0 opacity-100"
             : "translate-x-full opacity-0"
         }`}
       >
         {/* Background with gradient */}
-        <div className="absolute inset-0  bg-gradient-to-b from-[#F5ECE4] to-[#D1C4B2] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#77D1CB] to-[#30807B] overflow-hidden">
           {/* Animated background pattern */}
           <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-20 left-10 w-32 h-32 bg-[#734425] rounded-full animate-pulse"></div>
-            <div className="absolute top-60 right-16 w-24 h-24 bg-[#734425] rounded-full animate-pulse animation-delay-1000"></div>
-            <div className="absolute bottom-40 left-20 w-28 h-28 bg-[#734425] rounded-full animate-pulse animation-delay-2000"></div>
+            <div className="absolute top-20 left-10 w-32 h-32 bg-[#16423B] rounded-full animate-pulse"></div>
+            <div className="absolute top-60 right-16 w-24 h-24 bg-[#16423B] rounded-full animate-pulse animation-delay-1000"></div>
+            <div className="absolute bottom-40 left-20 w-28 h-28 bg-[#16423B] rounded-full animate-pulse animation-delay-2000"></div>
           </div>
         </div>
 
         {/* Content */}
         <div className="relative h-full flex flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-white/20">
+          <div className="flex items-center justify-between p-6 border-b border-[#56AFA9]/50">
             <div className="flex items-center space-x-3">
               <img src="/images/logo.png" alt="Logo" className="w-12 h-12" />
-              <span className="text-[#734425] font-bold text-xl">Menu</span>
+              <span className="text-[#16423B] font-bold text-xl">Menu</span>
             </div>
             <button
               onClick={closeMobileMenu}
-              className="p-2 text-[#734425] hover:text-gray-300 transition-colors rounded-full hover:bg-white/10"
+              className="p-2 text-[#16423B] hover:text-[#77D1CB] transition-colors rounded-full hover:bg-[#77D1CB]/20"
               aria-label="Close menu"
             >
               <X size={24} />
@@ -1592,14 +1592,14 @@ export default function Header() {
               <Link
                 href="/about"
                 onClick={closeMobileMenu}
-                className="block text-[#734425] text-lg font-medium py-4 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:translate-x-2"
+                className="block text-[#16423B] text-lg font-medium py-4 px-4 rounded-lg hover:bg-[#77D1CB]/20 hover:text-[#77D1CB] transition-all duration-300 transform hover:translate-x-2"
               >
                 About
               </Link>
 
-              {/* Our Products - Enhanced with full structure */}
-              <div className="bg-white/5 rounded-lg overflow-hidden">
-                <div className="text-[#734425] text-lg font-medium py-4 px-4 border-b border-white/10">
+              {/* Our Products */}
+              <div className="bg-[#16423B]/10 rounded-lg overflow-hidden">
+                <div className="text-[#16423B] text-lg font-medium py-4 px-4 border-b border-[#56AFA9]/30">
                   Our Products
                 </div>
 
@@ -1607,7 +1607,7 @@ export default function Header() {
                 <div className="px-4">
                   <button
                     onClick={() => toggleMobileSection("beverages")}
-                    className="flex items-center justify-between w-full text-left text-[#734425] font-medium py-3 hover:text-gray-300 transition-colors"
+                    className="flex items-center justify-between w-full text-left text-[#16423B] font-medium py-3 hover:text-[#77D1CB] transition-colors"
                   >
                     Beverages
                     <ChevronRight
@@ -1624,7 +1624,7 @@ export default function Header() {
                       <div>
                         <button
                           onClick={() => toggleMobileSection("hotCups")}
-                          className="flex items-center justify-between w-full text-left text-[#734425] text-sm font-medium py-2 hover:text-white transition-colors"
+                          className="flex items-center justify-between w-full text-left text-[#16423B] text-sm font-medium py-2 hover:text-white transition-colors"
                         >
                           Hot Cups
                           <ChevronRight
@@ -1640,35 +1640,35 @@ export default function Header() {
                             <Link
                               href="/our-products/double-wall-paper-cups"
                               onClick={closeMobileMenu}
-                              className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                              className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                             >
                               Double Wall Paper Cups
                             </Link>
                             <Link
                               href="/our-products/rippled-paper-cups"
                               onClick={closeMobileMenu}
-                              className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                              className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                             >
                               Rippled Paper Cups
                             </Link>
                             <Link
                               href="/our-products/heavy-gsm-single-wall"
                               onClick={closeMobileMenu}
-                              className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                              className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                             >
                               Heavy GSM Single Wall
                             </Link>
                             <Link
                               href="/our-products/double-wall-embossed-paper-cups"
                               onClick={closeMobileMenu}
-                              className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                              className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                             >
                               Double Wall Embossed Paper Cups
                             </Link>
                             <Link
                               href="/our-products/single-wall-paper-cups"
                               onClick={closeMobileMenu}
-                              className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                              className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                             >
                               Single Wall Paper Cups
                             </Link>
@@ -1680,7 +1680,7 @@ export default function Header() {
                       <div>
                         <button
                           onClick={() => toggleMobileSection("coldCups")}
-                          className="flex items-center justify-between w-full text-left text-[#734425] text-sm font-medium py-2 hover:text-white transition-colors"
+                          className="flex items-center justify-between w-full text-left text-[#16423B] text-sm font-medium py-2 hover:text-white transition-colors"
                         >
                           Cold Cups
                           <ChevronRight
@@ -1696,7 +1696,7 @@ export default function Header() {
                             <Link
                               href="/our-products/2pe-cups"
                               onClick={closeMobileMenu}
-                              className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                              className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                             >
                               2PE Cups
                             </Link>
@@ -1708,10 +1708,10 @@ export default function Header() {
                 </div>
 
                 {/* Food Serving Section */}
-                <div className="px-4 border-t border-white/10">
+                <div className="px-4 border-t border-[#56AFA9]/30">
                   <button
                     onClick={() => toggleMobileSection("foodServing")}
-                    className="flex items-center justify-between w-full text-left text-[#734425] font-medium py-3 hover:text-gray-300 transition-colors"
+                    className="flex items-center justify-between w-full text-left text-[#16423B] font-medium py-3 hover:text-[#77D1CB] transition-colors"
                   >
                     Food Serving
                     <ChevronRight
@@ -1727,14 +1727,14 @@ export default function Header() {
                       <Link
                         href="/our-products/food-container"
                         onClick={closeMobileMenu}
-                        className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                        className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                       >
                         Food Container
                       </Link>
                       <Link
                         href="/our-products/ice-cream-cups"
                         onClick={closeMobileMenu}
-                        className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                        className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                       >
                         Ice Cream Cups
                       </Link>
@@ -1743,10 +1743,10 @@ export default function Header() {
                 </div>
 
                 {/* Serving Add-on Section */}
-                <div className="px-4 border-t border-white/10">
+                <div className="px-4 border-t border-[#56AFA9]/30">
                   <button
                     onClick={() => toggleMobileSection("servingAddOn")}
-                    className="flex items-center justify-between w-full text-left text-[#734425] font-medium py-3 hover:text-gray-300 transition-colors"
+                    className="flex items-center justify-between w-full text-left text-[#16423B] font-medium py-3 hover:text-[#77D1CB] transition-colors"
                   >
                     Serving Add-on
                     <ChevronRight
@@ -1762,14 +1762,14 @@ export default function Header() {
                       <Link
                         href="/our-products/paper-straws"
                         onClick={closeMobileMenu}
-                        className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                        className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                       >
                         Paper Straws
                       </Link>
                       <Link
                         href="/our-products/plastic-paper-lids"
                         onClick={closeMobileMenu}
-                        className="block text-[#734425] text-sm py-2 px-2 rounded hover:bg-white/5 hover:text-white transition-all duration-200"
+                        className="block text-[#16423B] text-sm py-2 px-2 rounded hover:bg-[#77D1CB]/20 hover:text-white transition-all duration-200"
                       >
                         Paper and Plastic Lids
                       </Link>
@@ -1782,7 +1782,7 @@ export default function Header() {
               <Link
                 href="/compostable"
                 onClick={closeMobileMenu}
-                className="block text-[#734425] text-lg font-medium py-4 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:translate-x-2"
+                className="block text-[#16423B] text-lg font-medium py-4 px-4 rounded-lg hover:bg-[#77D1CB]/20 hover:text-[#77D1CB] transition-all duration-300 transform hover:translate-x-2"
               >
                 Compostable Paper Cups
               </Link>
@@ -1790,7 +1790,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={closeMobileMenu}
-                className="block text-[#734425] text-lg font-medium py-4 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:translate-x-2"
+                className="block text-[#16423B] text-lg font-medium py-4 px-4 rounded-lg hover:bg-[#77D1CB]/20 hover:text-[#77D1CB] transition-all duration-300 transform hover:translate-x-2"
               >
                 Contact
               </Link>
@@ -1799,10 +1799,10 @@ export default function Header() {
 
           {/* Footer with sign out */}
           {user && (
-            <div className="p-6 border-t border-white/20">
+            <div className="p-6 border-t border-[#56AFA9]/50">
               <Button
                 onClick={handleSignOut}
-                className="w-full bg-white text-black hover:bg-gray-200 rounded-lg py-3 font-medium transition-all duration-300 transform hover:scale-105"
+                className="w-full bg-[#16423B] text-white hover:bg-[#30807B] rounded-lg py-3 font-medium transition-all duration-300 transform hover:scale-105"
               >
                 Sign out
               </Button>

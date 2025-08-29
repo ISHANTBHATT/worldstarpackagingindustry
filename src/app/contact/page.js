@@ -524,6 +524,7 @@
 // //     </button>
 // //   );
 // // }
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -542,6 +543,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
+import React, { useState } from "react";
 
 // Teal brand palette
 // BG: #5FBBB5 | Card: #E6F7F6 | Accent Border: #56AFA9
@@ -549,6 +551,54 @@ import { cn } from "@/lib/utils";
 // Form BG: #CBEBE8 | Placeholder: #55A9A3 | Focus: #168F84
 
 export default function Page() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const { fullName, email, phone, message, subject } = formData;
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userEmail: email,
+          userName: fullName,
+          subject: subject,
+          phone: phone,
+          message: message,
+        }),
+      });
+      if (res.ok) {
+        alert("Message sent successfully!");
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          message: "",
+          subject: "",
+        }); // reset form
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred. Please try again later.");
+    }
+    setIsLoading(false);
+  };
   return (
     <main className="min-h-screen bg-[#5FBBB5] text-[#16423B] antialiased ">
       {/* Hero */}
@@ -590,15 +640,21 @@ export default function Page() {
                 Let&apos;s Connect
               </h2>
             </div>
-            <form className="mt-6 space-y-4">
+            <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
               <FormField label="Name">
                 <Input
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
                   placeholder="Your Name..."
                   className="h-11 rounded-md border-[#56AFA9] bg-[#CBEBE8] text-[#16423B] placeholder:text-[#55A9A3] focus-visible:ring-[#168F84]"
                 />
               </FormField>
               <FormField label="Email">
                 <Input
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   type="email"
                   placeholder="example@yourmail.com"
                   className="h-11 rounded-md border-[#56AFA9] bg-[#CBEBE8] text-[#16423B] placeholder:text-[#55A9A3] focus-visible:ring-[#168F84]"
@@ -606,23 +662,30 @@ export default function Page() {
               </FormField>
               <FormField label="Subject">
                 <Input
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   placeholder="Title..."
                   className="h-11 rounded-md border-[#56AFA9] bg-[#CBEBE8] text-[#16423B] placeholder:text-[#55A9A3] focus-visible:ring-[#168F84]"
                 />
               </FormField>
               <FormField label="Message">
                 <Textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Type here..."
                   className="min-h-[120px] rounded-md border-[#56AFA9] bg-[#CBEBE8] text-[#16423B] placeholder:text-[#55A9A3] focus-visible:ring-[#168F84]"
                 />
               </FormField>
               <div className="pt-2">
                 <Button
+                  disabled={isLoading}
                   type="submit"
                   variant="outline"
                   className="h-11 rounded-full border-[#30807B] bg-[#16423B] text-white hover:bg-[#168F84]"
                 >
-                  Send Now
+                  {isLoading ? "Sending..." : "SEND MESSAGE"}
                 </Button>
               </div>
             </form>

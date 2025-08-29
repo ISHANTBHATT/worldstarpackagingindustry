@@ -486,6 +486,7 @@
 //   );
 // }
 
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 // const products = [
@@ -657,9 +658,11 @@ export default function Carousel() {
           <p className="text-white mb-8 max-w-[90%] animate-showContent delay-300">
             {products[active].description}
           </p>
-          <button className="bg-[#17252a] text-white px-8 py-2 rounded-full font-poppins font-semibold w-fit hover:bg-white/80 transition-all shadow-md">
-            know more
-          </button>
+          <Link href="/about">
+            <button className="bg-[#17252a] text-white px-8 py-2 rounded-full font-poppins font-semibold w-fit hover:bg-[#16423B] transition-all shadow-md">
+              know more
+            </button>
+          </Link>
         </section>
         {/* Right (Image pane) */}
         <section className="w-full md:w-[52%] flex flex-row items-center relative overflow-x-visible z-10">

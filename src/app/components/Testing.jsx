@@ -762,7 +762,7 @@ export default function Testing() {
                   taste should never come at nature&apos;s expense.
                 </p>
                 <a
-                  href="/about"
+                  href="/compostable"
                   className="btn bg-[#17252a] mt-4 sm:mt-8 text-white px-4 sm:px-5 py-2 font-medium rounded-[10px] text-sm sm:text-base"
                 >
                   Know More

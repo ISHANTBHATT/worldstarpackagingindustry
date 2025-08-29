@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Clients() {
   const leftLogos = [
@@ -50,22 +51,24 @@ export default function Clients() {
                 with a touch of innovation.
               </p>
             </div>
-            <button className="bg-[#17252a] hover:bg-[#6b3c22] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
-              Explore Integration
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
+            <Link href="/contact">
+              <button className="bg-[#17252a] hover:bg-[#16423B] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                Explore Integration
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
 
           {/* Right Animated Logos */}
