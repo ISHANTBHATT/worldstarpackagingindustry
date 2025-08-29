@@ -54,9 +54,9 @@ function Footer() {
             </div>
           </div>
 
-          {/* Our Store */}
+          {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white">Our Store</h4>
+            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="mt-4 space-y-3 text-gray-200">
               <li>
                 <Link href="/" className="hover:text-white">
@@ -69,12 +69,15 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/our-products" className="hover:text-white">
+                <Link
+                  href="/our-products/double-wall-paper-cups"
+                  className="hover:text-white"
+                >
                   Our Products
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="hover:text-white">
+                <Link href="/compostable" className="hover:text-white">
                   Compostable Paper Cups
                 </Link>
               </li>
@@ -112,6 +115,13 @@ function Footer() {
                 </span>
               </li>
             </ul>
+            <a
+              href="/images/Worldstar Brochure (210 x 297 mm).pdf"
+              download
+              className="mt-6 inline-block rounded bg-white px-4 py-2 text-center text-sm font-semibold text-[#329893] hover:bg-gray-200"
+            >
+              Download Brochure
+            </a>
           </div>
         </div>
       </div>

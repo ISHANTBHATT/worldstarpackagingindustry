@@ -903,7 +903,7 @@ export default function Testing() {
           <Certificates />
           <div className="w-full flex flex-col items-end relative px-4 sm:px-8">
             <div className="bg-white rounded-full w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex items-center justify-center absolute -bottom-12 sm:-bottom-16 lg:-bottom-20">
-              <SpinningText className="text-[#17252a] text-xs sm:text-base">
+              <SpinningText className="text-[#16423B] text-xs sm:text-base">
                 learn more • earn more • grow more •
               </SpinningText>
             </div>

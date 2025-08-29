@@ -647,7 +647,7 @@ export default function Page() {
           <div className="text-left mb-16 text-[#16423B]">
             <p className="mb-4 tracking-wider">
               At WorldStar Packaging, we are proud to be India&apos;s largest
-              paper cup manufacturer and exporter, with over 25 years of
+              paper cup manufacturer and exporter, with over 27 years of
               experience delivering premium packaging solutions. Our expertise
               spans across RTD (Ready-to-Drink) packaging, serving a wide
               spectrum of businesses, from iconic Indian brands to global
