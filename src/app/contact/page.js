@@ -587,7 +587,7 @@ export default function Page() {
                 Contact Us
               </p>
               <h2 className="text-3xl font-semibold tracking-tight">
-                Let's Connect
+                Let&apos;s Connect
               </h2>
             </div>
             <form className="mt-6 space-y-4">
@@ -633,7 +633,7 @@ export default function Page() {
               <p className="max-w-xl text-[#16423B]">
                 Have a question or are you ready to take your packaging to the
                 next level? Our team at WorldStar Packaging Industry is always
-                happy to help. Reach out today—let's create eco-friendly,
+                happy to help. Reach out today—let&apos;s create eco-friendly,
                 innovative solutions together!
               </p>
               <div className="my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
