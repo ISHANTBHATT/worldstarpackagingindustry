@@ -716,13 +716,13 @@ export default function Testing() {
       }
     };
   }, []);
-
+  //#5FBBB5,#3aafa9,#2b7a78,#17252a,#def2f1
   return (
     <div className="relative z-0">
       <div id="smooth-wrapper">
         <div
           id="smooth-content"
-          className="bg-[#F5ECE4] text-[#2E2E2E] font-dm-sans text-base sm:text-lg leading-[1.5] min-h-screen"
+          className="bg-[#5FBBB5] text-[#17252a] font-dm-sans text-base sm:text-lg leading-[1.5] min-h-screen"
         >
           {/* <Homepage /> */}
           <Carousel />
@@ -743,7 +743,7 @@ export default function Testing() {
               id="section1"
               className="h-screen w-full max-w-[90vw] lg:max-w-[60vw] mx-auto flex items-center justify-center text-center px-4"
             >
-              <h1 className="heading font-outfit font-bold text-[clamp(2rem,8vw,11.5vw)] lg:text-[11.5vw] leading-[0.85] uppercase text-[#734425] mb-0">
+              <h1 className="heading font-outfit font-bold text-[clamp(2rem,8vw,11.5vw)] lg:text-[11.5vw] leading-[0.85] uppercase text-white mb-0">
                 Paper Cups & Straws
               </h1>
             </section>
@@ -753,7 +753,7 @@ export default function Testing() {
               className="min-h-screen pt-8 sm:pt-16 lg:pt-[4vw]"
             >
               <div className="content-wrapper max-w-[500px] px-4 sm:px-0">
-                <h2 className="heading font-outfit font-bold text-4xl sm:text-6xl lg:text-8xl uppercase text-[#734425] mb-6">
+                <h2 className="heading font-outfit font-bold text-4xl sm:text-6xl lg:text-8xl uppercase text-white mb-6">
                   Sip sustainably!
                 </h2>
                 <p className="pb-6 sm:pb-10 text-sm sm:text-base">
@@ -763,7 +763,7 @@ export default function Testing() {
                 </p>
                 <a
                   href="/about"
-                  className="btn bg-[#2E2E2E] mt-4 sm:mt-8 text-white px-4 sm:px-5 py-2 font-medium rounded-[10px] text-sm sm:text-base"
+                  className="btn bg-[#17252a] mt-4 sm:mt-8 text-white px-4 sm:px-5 py-2 font-medium rounded-[10px] text-sm sm:text-base"
                 >
                   Know More
                 </a>
@@ -803,7 +803,7 @@ export default function Testing() {
               id="section3"
               className="min-h-screen pt-8 sm:pt-16 lg:pt-[4vw] pb-8 sm:pb-16 lg:pb-[4vw] px-4 sm:px-0"
             >
-              <h2 className="heading font-outfit font-bold text-center mb-8 sm:mb-12 lg:mb-[3vw] text-[clamp(2rem,8vw,13.5rem)] text-[#734425] uppercase">
+              <h2 className="heading font-outfit font-bold text-center mb-8 sm:mb-12 lg:mb-[3vw] text-[clamp(2rem,8vw,13.5rem)] text-white uppercase">
                 About Us
               </h2>
               <div className="content-wrapper flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-24 items-center">
@@ -814,7 +814,7 @@ export default function Testing() {
                 />
                 <div className="content max-w-[500px] lg:ml-auto order-1 lg:order-2">
                   <p className="mt-4 text-sm sm:text-base">
-                    For over 25 years, WorldStar Packaging Industry has been
+                    For over 27 years, WorldStar Packaging Industry has been
                     shaping the way beverages are served with packaging that
                     blends innovation, sustainability, and trust. From gourmet
                     coffee brands to quick-service restaurants and leading
@@ -866,33 +866,33 @@ export default function Testing() {
               id="section5"
               className="text-center pt-8 sm:pt-16 lg:pt-[4vw] pb-16 sm:pb-24 lg:pb-[8vw] min-h-[94vh] px-4 sm:px-0"
             >
-              <h2 className="heading font-outfit font-bold text-[clamp(2rem,6.5vw,6.5vw)] uppercase text-[#734425] mb-6">
+              <h2 className="heading font-outfit font-bold text-[clamp(2rem,6.5vw,6.5vw)] uppercase text-white mb-6">
                 Top Picks
               </h2>
               <div className="product-section grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6 mt-8 sm:mt-18">
                 <div className="product flex flex-col items-center justify-end">
                   <img
-                    src="/images/cup8.png"
+                    src="/images/cup9.png"
                     alt="green"
                     className="w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] mb-4 sm:mb-6 drop-shadow-[6px_15px_5px_rgba(0,0,0,0.09)]"
                   />
                   <div className="name text-lg sm:text-xl font-medium">
-                    Rippled
+                    Double Wall Paper cups
                   </div>
                 </div>
                 <div className="hidden lg:flex product flex-col items-center justify-end">
                   <div className="name text-lg sm:text-xl font-medium  text-center">
-                    Plastic Lid for Paper cups
+                    Rippled Paper cups
                   </div>
                 </div>
                 <div className="product flex flex-col items-center justify-end sm:col-span-2 lg:col-span-1">
                   <img
-                    src="/images/cup2.png"
+                    src="/images/cup6.png"
                     alt="black"
                     className="w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] mb-4 sm:mb-6 drop-shadow-[6px_15px_5px_rgba(0,0,0,0.09)]"
                   />
                   <div className="name text-lg sm:text-xl font-medium">
-                    Single Wall
+                    Single Wall Paper cups
                   </div>
                 </div>
               </div>
@@ -903,7 +903,7 @@ export default function Testing() {
           <Certificates />
           <div className="w-full flex flex-col items-end relative px-4 sm:px-8">
             <div className="bg-white rounded-full w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex items-center justify-center absolute -bottom-12 sm:-bottom-16 lg:-bottom-20">
-              <SpinningText className="text-[#734425] text-xs sm:text-base">
+              <SpinningText className="text-[#17252a] text-xs sm:text-base">
                 learn more • earn more • grow more •
               </SpinningText>
             </div>

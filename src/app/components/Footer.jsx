@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 
 function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-[#734425]">
+    <footer className="border-t  bg-[#329893]">
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
@@ -31,7 +31,7 @@ function Footer() {
               <img src="/images/logo.png" className="max-w-32" alt="logo" />
             </div>
             <p className="mt-4 max-w-sm text-sm text-white">
-              For over 25 years, WorldStar Packaging Industry has been shaping
+              For over 27 years, WorldStar Packaging Industry has been shaping
               the way beverages are served with packaging that blends
               innovation, sustainability, and trust.
             </p>
@@ -57,7 +57,7 @@ function Footer() {
           {/* Our Store */}
           <div>
             <h4 className="text-lg font-semibold text-white">Our Store</h4>
-            <ul className="mt-4 space-y-3 text-zinc-300">
+            <ul className="mt-4 space-y-3 text-gray-200">
               <li>
                 <Link href="/" className="hover:text-white">
                   Home
@@ -89,16 +89,16 @@ function Footer() {
           {/* Get In Touch */}
           <div>
             <h4 className="text-lg font-semibold text-white">Get In Touch</h4>
-            <ul className="mt-4 space-y-4 text-zinc-300">
+            <ul className="mt-4 space-y-4 text-gray-100">
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-5 w-5 text-white/80" />
+                <MapPin className="mt-0.5 h-5 w-5 text-white" />
                 <span className="flex-1 text-base">
                   World Star Packaging Industry, Plot no 53, sector 53, phase I,
                   HSIIDC Kundli, Sonipat,Haryana-131028
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-5 w-5 text-white/80" />
+                <Phone className="mt-0.5 h-5 w-5 text-white" />
                 <span className="flex-1 text-base">+91 98105 01613</span>
               </li>
               {/* <li className="flex items-start gap-3">
@@ -106,7 +106,7 @@ function Footer() {
                 <span>082-245-7253</span>
               </li> */}
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-5 w-5 text-white/80 " />
+                <Mail className="mt-0.5 h-5 w-5 text-white" />
                 <span className="text-base flex-1 [overflow-wrap:anywhere] inline-block">
                   worldstarpackagingindustry@gmail.com
                 </span>
@@ -139,7 +139,7 @@ function Social({ icon, ariaLabel, href }) {
     <button
       aria-label={ariaLabel}
       className={cn(
-        "inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-zinc-300 hover:border-white hover:text-white"
+        "inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-100 hover:border-white hover:text-white"
       )}
     >
       <a href={href} target="_blank" rel="noopener noreferrer">

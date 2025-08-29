@@ -38,9 +38,7 @@ const certificates = [
 export default function Certificates() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center  py-10">
-      <h1 className="text-4xl font-bold mb-8 text-[#734425]">
-        Our Certifications
-      </h1>
+      <h1 className="text-4xl font-bold mb-8 text-white">Our Certifications</h1>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 w-full max-w-4xl items-center">
         {certificates.map((cert, i) => (
           <CertificateCard

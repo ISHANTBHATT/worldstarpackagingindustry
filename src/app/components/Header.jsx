@@ -1342,7 +1342,7 @@ export default function Header() {
             </button>
 
             {isProductsDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+              <div className="absolute top-full left-0 mt-2 w-72 bg-[#def2f1] border border-gray-200 rounded-lg shadow-lg z-50">
                 <div className="p-4">
                   {/* Beverages */}
                   <div className="mb-2">

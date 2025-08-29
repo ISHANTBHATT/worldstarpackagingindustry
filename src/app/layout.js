@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
         <div id="smooth-wrapper">
           <div
             id="smooth-content"
-            className="bg-[#F5ECE4] text-[#2E2E2E] font-dm-sans text-base sm:text-lg leading-[1.5] min-h-screen"
+            className="bg-[#5FBBB5] text-[#17252a] font-dm-sans text-base sm:text-lg leading-[1.5] min-h-screen"
           >
             {children}
             <Footer />

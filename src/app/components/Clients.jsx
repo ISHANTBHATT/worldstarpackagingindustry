@@ -31,18 +31,18 @@ export default function Clients() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F5ECE4] p-8">
+    <div className="min-h-screen bg-[#5FBBB5] p-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                Trusted by <span className="text-[#734425]">Brands,</span>
+              <h1 className="text-4xl lg:text-5xl font-bold text-[#17252a]">
+                Trusted by <span className="text-white">Brands,</span>
                 <br />
                 Served with Care
               </h1>
-              <p className="text-lg text-gray-600 max-w-md">
+              <p className="text-lg text-[#17252a] max-w-md">
                 From your favourite cafés to leading food chains, our
                 eco-friendly cups and straws carry the mark of quality and
                 reliability. Each brand you see here partners with us to ensure
@@ -50,7 +50,7 @@ export default function Clients() {
                 with a touch of innovation.
               </p>
             </div>
-            <button className="bg-[#734425] hover:bg-[#6b3c22] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+            <button className="bg-[#17252a] hover:bg-[#6b3c22] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
               Explore Integration
               <svg
                 className="w-4 h-4"

@@ -301,17 +301,15 @@ export default function ProductSlugPage() {
 
   return (
     <>
-      <div className="pt-24 w-full max-w-7xl mx-auto py-20 space-y-12">
+      <div className="pt-32 w-full max-w-7xl mx-auto py-20 space-y-12 ">
         {/* Page Title */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            {categoryName}
-          </h1>
+          <h1 className="text-4xl font-bold text-white mb-4">{categoryName}</h1>
           {groupedData.length > 0 && (
-            <div className="text-lg text-gray-600">
+            <div className="text-lg text-gray-100">
               AVAILABLE SIZES
-              <p className="text-sm text-gray-500">{groupedData[0].sizes}</p>
-              <p className="text-sm text-gray-500">{groupedData[0].ml}</p>
+              <p className="text-sm text-gray-100">{groupedData[0].sizes}</p>
+              <p className="text-sm text-gray-100">{groupedData[0].ml}</p>
             </div>
           )}
         </div>
@@ -333,7 +331,7 @@ export default function ProductSlugPage() {
                   key={idx}
                   className="group cursor-pointer transition-transform hover:scale-105"
                 >
-                  <div className="relative aspect-square border-[#D7C9BB] bg-[#EBDFD3] rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="relative aspect-square border-[#D7C9BB] bg-[#fff] rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow">
                     <img
                       src={imageUrl || "/placeholder.svg"}
                       alt={`${cat.category} ${idx + 1}`}

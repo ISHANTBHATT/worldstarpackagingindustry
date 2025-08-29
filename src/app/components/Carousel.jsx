@@ -529,7 +529,7 @@ const products = [
     price: "$ 20",
     description:
       "Great coffee deserves a great cup. Our paper cups, designed for Gourmet Fresh Coffee, bring together strength, sustainability, and style — the perfect blend for your perfect brew.",
-    bgColor: "#F5ECE4",
+    bgColor: "#5FBBB5",
     image: "/images/c1.png",
   },
   {
@@ -537,7 +537,7 @@ const products = [
     price: "$ 20",
     description:
       "Fresh coffee. Fresh design. Fresh experience. Worldstar Packaging creates specialty cups for Coffee Eat, where quality packaging meets quality brewing.",
-    bgColor: "#F5ECE4",
+    bgColor: "#5FBBB5",
     image: "/images/c2.png",
   },
   {
@@ -545,7 +545,7 @@ const products = [
     price: "$ 20",
     description:
       "Every detail matters in the skies! The crafted paper cups for IndiGo Airlines deliver more than just coffee; they deliver comfort, convenience, and quality for passengers across every journey. ",
-    bgColor: "#F5ECE4",
+    bgColor: "#5FBBB5",
     image: "/images/c5.png",
   },
   {
@@ -553,7 +553,7 @@ const products = [
     price: "$ 20",
     description:
       "Chai that feels like home, cups that feel like Chaayos! We make sure every blend of chai experiments and comfort classics is served in cups crafted to keep the flavor, vibe, and freshness alive.",
-    bgColor: "#F5ECE4",
+    bgColor: "#5FBBB5",
     image: "/images/c4.png",
   },
 ];
@@ -581,7 +581,7 @@ export default function Carousel() {
     // );
     timeoutRef.current = setTimeout(() => {
       triggerAnimation((active + 1) % count);
-    }, 5000);
+    }, 2000);
     return () => clearTimeout(timeoutRef.current);
   }, [active, count]);
 
@@ -647,17 +647,17 @@ export default function Carousel() {
         {/* Left (Textual content) */}
         <section className="flex flex-col justify-center pl-[5vw] pr-[2vw] w-full md:w-[48%] border-r border-white/30 z-10 relative">
           <h1
-            className={`font-aboreto text-[3vw] leading-[1.1] text-black mb-4 animate-showContent`}
+            className={`font-aboreto text-[3vw] leading-[1.1] text-white mb-4 animate-showContent`}
           >
             {products[active].title}
           </h1>
           {/* <p className="font-aboreto text-[2vw] text-black mb-2 animate-showContent delay-200">
             {products[active].price}
           </p> */}
-          <p className="text-black mb-8 max-w-[90%] animate-showContent delay-300">
+          <p className="text-white mb-8 max-w-[90%] animate-showContent delay-300">
             {products[active].description}
           </p>
-          <button className="bg-white/60 text-black px-8 py-2 rounded-full font-poppins font-semibold w-fit hover:bg-white/80 transition-all shadow-md">
+          <button className="bg-[#17252a] text-white px-8 py-2 rounded-full font-poppins font-semibold w-fit hover:bg-white/80 transition-all shadow-md">
             know more
           </button>
         </section>

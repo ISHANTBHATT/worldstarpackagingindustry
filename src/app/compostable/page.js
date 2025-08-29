@@ -7,9 +7,9 @@ import Link from "next/link";
 
 export default function CompostableCupsBrochure() {
   return (
-    <div className="min-h-screen bg-[#F5ECE4] py-32">
+    <div className="min-h-screen bg-[#5FBBB5] text-[#16423B] py-32">
       {/* Header Section */}
-      <header className=" text-[#734425] py-8 px-4">
+      <header className=" text-[#16423B] py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-7xl font-light tracking-tight mb-8">
             COMPOSTABLE PAPER CUPS
@@ -32,7 +32,7 @@ export default function CompostableCupsBrochure() {
               /> */}
               <Badge
                 variant="secondary"
-                className="text-lg px-4 py-2 bg-[#B2E7BC] rounded-3xl"
+                className="text-lg px-4 py-2 bg-[#E6F7F6] text-[#16423B] rounded-3xl"
               >
                 CPCB Certified
               </Badge>
@@ -74,7 +74,7 @@ export default function CompostableCupsBrochure() {
 
         {/* Key Features Section */}
         <section className="mb-16 ">
-          <Card className="shadow-lg bg-[#B2E7BC]">
+          <Card className="shadow-lg bg-[#E6F7F6] text-[#16423B] border border-[#3aafa9]">
             <CardHeader>
               <CardTitle className="text-2xl text-center mb-6">
                 Key Highlights of Our Certified Compostable Paper Cups
@@ -88,7 +88,7 @@ export default function CompostableCupsBrochure() {
                     <h3 className="font-semibold text-lg mb-2">
                       CPCB Certified
                     </h3>
-                    <p className="text-muted-foreground text-base">
+                    <p className="text-[#30807B] text-base">
                       Our cups are officially recognized by the Central
                       Pollution Control Board, affirming our commitment to
                       environmental sustainability.
@@ -102,7 +102,7 @@ export default function CompostableCupsBrochure() {
                     <h3 className="font-semibold text-lg mb-2">
                       Eco-friendly Materials
                     </h3>
-                    <p className="text-muted-foreground text-base">
+                    <p className="text-[#30807B] text-base">
                       Made from biodegradable and compostable materials, our
                       cups are designed to minimize environmental impact.
                     </p>
@@ -115,7 +115,7 @@ export default function CompostableCupsBrochure() {
                     <h3 className="font-semibold text-lg mb-2">
                       Sustainable Choice
                     </h3>
-                    <p className="text-muted-foreground text-base">
+                    <p className="text-[#30807B] text-base">
                       Ideal for businesses aiming to reduce their carbon
                       footprint and support a greener future.
                     </p>
@@ -152,8 +152,8 @@ export default function CompostableCupsBrochure() {
         <QRCodeSection />
 
         {/* Quality Standards Footer */}
-        <section className="mt-16 text-center">
-          <Card className="bg-card shadow-lg">
+        <section className="mt-16 text-center ">
+          <Card className="bg-card shadow-lg bg-[#E6F7F6] text-[#16423B]">
             <CardContent className="pt-6">
               <p className="text-lg font-medium italic">
                 All products are tested as per global food safety and packaging

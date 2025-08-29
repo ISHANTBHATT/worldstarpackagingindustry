@@ -18,10 +18,10 @@ export default function QRCodeSection() {
 
   return (
     <section className="mb-16 ">
-      <Card className="border-accent bg-[#B2E7BC] shadow-lg">
+      <Card className="border-accent bg-[#E6F7F6] shadow-lg text-[#16423B]">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl mb-4 flex items-center justify-center gap-2">
-            <Award className="w-8 h-8 text-white" />
+            <Award className="w-8 h-8 text-[#55A9A3]" />
             CPCB Certification Verification
           </CardTitle>
         </CardHeader>
@@ -101,27 +101,27 @@ export default function QRCodeSection() {
                 Certificate Details
               </h3>
 
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-white shrink-0" />
                 <span className="break-words overflow-hidden">
-                  CPCB Registration Number: WP/2024/ECO/001
+                  CPCB Certificate No: 
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-white shrink-0" />
+                <CheckCircle className="w-5 h-5 text-[#55A9A3] shrink-0" />
                 <span className="break-words">
-                  Certification Date: January 2024
+                  Certification Date: April 2025
                 </span>
               </div>
 
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-white shrink-0" />
                 <span className="break-words">Valid Until: January 2027</span>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-white shrink-0" />
+                <CheckCircle className="w-5 h-5 text-[#55A9A3] shrink-0" />
                 <span className="break-words">
                   Product Category: Compostable Food Packaging
                 </span>
@@ -129,7 +129,7 @@ export default function QRCodeSection() {
 
               <div
                 // variant="secondary"
-                className="mt-4 bg-[#B2E7BC] break-words text-sm"
+                className="mt-4 break-words text-sm"
               >
                 Verified by Central Pollution Control Board
               </div>

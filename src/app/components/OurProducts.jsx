@@ -6,37 +6,37 @@ const springItems = [
     id: 1,
     title: "Single Wall",
     imageURL: "/images/p1.png",
-    bgColor: "bg-teal-200",
+    bgColor: "bg-[#A6D6D3]",
   },
   {
     id: 2,
     title: "Double Wall",
     imageURL: "/images/p2.png",
-    bgColor: "bg-pink-200",
+    bgColor: "bg-[#FFB6B9]",
   },
   {
     id: 3,
     title: "Rippled",
     imageURL: "/images/p3.png",
-    bgColor: "bg-teal-300",
+    bgColor: "bg-[#F9E79F]",
   },
   {
     id: 4,
     title: "Paper food container with plastic lid",
     imageURL: "/images/p4.png",
-    bgColor: "bg-cyan-200",
+    bgColor: "bg-[#85C1B6]",
   },
   {
     id: 5,
     title: "Paper straws",
     imageURL: "/images/p5.png",
-    bgColor: "bg-gray-300",
+    bgColor: "bg-[#D7BDE2]",
   },
   {
     id: 6,
     title: "Paper and Plastic Lid for Paper cups",
     imageURL: "/images/p6.png",
-    bgColor: "bg-teal-500",
+    bgColor: "bg-[#7DCEA0]",
   },
 ];
 
@@ -74,7 +74,7 @@ const springItems = [
 // ];
 export default function OurProducts() {
   return (
-    <div className="w-full bg-[#F5ECE4] py-8 px-4">
+    <div className="w-full bg-[#5FBBB5] py-8 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-left">
           Our Products
