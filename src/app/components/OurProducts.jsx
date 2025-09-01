@@ -4,37 +4,37 @@ import Image from "next/image";
 const springItems = [
   {
     id: 1,
-    title: "Single Wall",
+    title: "Single Wall Paper Cups",
     imageURL: "/images/p1.png",
     bgColor: "bg-[#A6D6D3]",
   },
   {
     id: 2,
-    title: "Double Wall",
+    title: "Double Wall Paper Cups",
     imageURL: "/images/p2.png",
     bgColor: "bg-[#FFB6B9]",
   },
   {
     id: 3,
-    title: "Rippled",
+    title: "Rippled Paper Cups",
     imageURL: "/images/p3.png",
     bgColor: "bg-[#F9E79F]",
   },
   {
     id: 4,
-    title: "Paper food container with plastic lid",
+    title: "Paper Food Container with Paper & Plastic Lid",
     imageURL: "/images/p4.png",
     bgColor: "bg-[#85C1B6]",
   },
   {
     id: 5,
-    title: "Paper straws",
+    title: "Paper Straws",
     imageURL: "/images/p5.png",
     bgColor: "bg-[#D7BDE2]",
   },
   {
     id: 6,
-    title: "Paper and Plastic Lid for Paper cups",
+    title: "Paper and Plastic Lid for Paper Cups",
     imageURL: "/images/p6.png",
     bgColor: "bg-[#7DCEA0]",
   },

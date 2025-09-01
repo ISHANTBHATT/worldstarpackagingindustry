@@ -852,22 +852,22 @@ export default function Page() {
                 <Image
                   src="/images/cup6.png"
                   alt="Metal texture 1"
-                  width={120}
-                  height={120}
+                  width={180}
+                  height={180}
                   className="object-cover "
                 />
                 <Image
-                  src="/images/cup5.png"
+                  src="/images/ab1.png"
                   alt="Metal texture 2"
-                  width={120}
-                  height={120}
+                  width={180}
+                  height={180}
                   className="object-cover "
                 />
                 <Image
-                  src="/images/cup7.png"
+                  src="/images/ab2.png"
                   alt="Metal texture 3"
-                  width={120}
-                  height={120}
+                  width={180}
+                  height={180}
                   className="object-cover"
                 />
               </div>

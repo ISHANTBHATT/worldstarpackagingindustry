@@ -430,6 +430,26 @@ export const Data = [
     alt: "coffee paper cups",
     category: "PAPER STRAWS",
   },
+  {
+    imageURL: "/images/s3.jpg",
+    alt: "paper straws",
+    category: "PAPER STRAWS",
+  },
+  {
+    imageURL: "/images/s4.png",
+    alt: "paper straws",
+    category: "PAPER STRAWS",
+  },
+  {
+    imageURL: "/images/s5.png",
+    alt: "paper straws",
+    category: "PAPER STRAWS",
+  },
+  {
+    imageURL: "/images/s6.png",
+    alt: "paper straws",
+    category: "PAPER STRAWS",
+  },
   // Plastic Lid for Paper Cups
   {
     imageURL: "/images/l1.jpeg",

@@ -96,7 +96,7 @@ function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 text-white" />
                 <span className="flex-1 text-base">
-                  World Star Packaging Industry, Plot no 53, sector 53, phase I,
+                  WorldStar Packaging Industry, Plot no 53, sector 53, phase I,
                   HSIIDC Kundli, Sonipat,Haryana-131028
                 </span>
               </li>

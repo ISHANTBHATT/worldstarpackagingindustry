@@ -877,12 +877,12 @@ export default function Testing() {
                     className="w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] mb-4 sm:mb-6 drop-shadow-[6px_15px_5px_rgba(0,0,0,0.09)]"
                   />
                   <div className="name text-lg sm:text-xl font-medium">
-                    Double Wall Paper cups
+                    Double Wall Paper Cups
                   </div>
                 </div>
                 <div className="hidden lg:flex product flex-col items-center justify-end">
                   <div className="name text-lg sm:text-xl font-medium  text-center">
-                    Rippled Paper cups
+                    Rippled Paper Cups
                   </div>
                 </div>
                 <div className="product flex flex-col items-center justify-end sm:col-span-2 lg:col-span-1">
@@ -892,7 +892,7 @@ export default function Testing() {
                     className="w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] mb-4 sm:mb-6 drop-shadow-[6px_15px_5px_rgba(0,0,0,0.09)]"
                   />
                   <div className="name text-lg sm:text-xl font-medium">
-                    Single Wall Paper cups
+                    Single Wall Paper Cups
                   </div>
                 </div>
               </div>
