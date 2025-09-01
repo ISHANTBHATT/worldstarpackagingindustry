@@ -686,13 +686,13 @@ export default function Page() {
               height={400}
               className="w-full object-cover rounded-lg"
             />
-            <div className="absolute bottom-6 left-6">
+            {/* <div className="absolute bottom-6 left-6">
               <p className="text-sm text-[#30807B] max-w-md font-light bg-[#E6F7F6] rounded-lg p-3">
                 Master craftsmen maintain high standards of excellence that have
                 been passed down through generations, ensuring each piece meets
                 our exacting quality standards.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
