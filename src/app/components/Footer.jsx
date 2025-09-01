@@ -116,7 +116,7 @@ function Footer() {
               </li>
             </ul>
             <a
-              href="/images/Worldstar Brochure (210 x 297 mm).pdf"
+              href="/images/Worldstar Brochure.pdf"
               download
               className="mt-6 inline-block rounded bg-white px-4 py-2 text-center text-sm font-semibold text-[#329893] hover:bg-gray-200"
             >
